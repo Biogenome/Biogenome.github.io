@@ -231,87 +231,13 @@
 
       
         
-          <span itemprop="articleBody">
-            
-              <h3 id="conda的环境管理"><a href="#conda的环境管理" class="headerlink" title="conda的环境管理"></a>conda的环境管理</h3><blockquote>
-<p>Conda的环境管理功能允许我们同时安装若干不同版本的Python，并能自由切换。假设我们采用的是Python3.6对应的安装包，那么Python3.6就是默认的环境,假设我们需要安装Python3.4，此时，打开Anacon daprompt命令行工具， 我们需要做的操作如下:</p>
-</blockquote>
-<ul>
-<li>创建一个名为python27的环境，指定Python版本是2.7（不用管是2.7.x，conda会为我们自动寻找2.7.x中的最新版本）</li>
-</ul>
-<blockquote>
-<p>conda create –name python27 python=2.7</p>
-</blockquote>
-<ul>
-<li>安装好后，使用activate激活某个环境</li>
-</ul>
-<blockquote>
-<p>activate python27 # for Windows<br>source activate python34 # for Linux &amp; Mac</p>
-</blockquote>
-<ul>
-<li>之后在Anaconda文件envs下就会生成新的环境变量文件，再用命令查看此时环境变量，当前所用环境变量前面一般有*标记</li>
-</ul>
-<blockquote>
-<p>conda info -e</p>
-</blockquote>
-<ul>
-<li>如果想返回默认的python 2.7环境，运行</li>
-</ul>
-<blockquote>
-<p>deactivate python27 # for Windows<br>source deactivate python27 # for Linux &amp; Mac</p>
-</blockquote>
-<ul>
-<li>删除一个已有的环境</li>
-</ul>
-<blockquote>
-<p>conda remove –name python27 –all</p>
-</blockquote>
-<h3 id="conda包的管理"><a href="#conda包的管理" class="headerlink" title="conda包的管理"></a>conda包的管理</h3><ul>
-<li>查看已经安装的packages，最新版的conda是从site-packages文件夹中搜索已经安装的包，不依赖于pip，可以显示出通过各种方式安装的包</li>
-</ul>
-<blockquote>
-<p>conda list</p>
-</blockquote>
-<ul>
-<li>例如我们要安装beautifulsoup4这个包，先用命令查找和查看该包是否可用</li>
-</ul>
-<blockquote>
-<p>conda search beautifulsoup4</p>
-</blockquote>
-<ul>
-<li>如果可用，继续进行包的安装，用namepython27指定安装包的环境，如果不指定，默认安转到当前环境中，所以在安装包之前要明白当前环境</li>
-</ul>
-<blockquote>
-<p>conda install beautifulsoup4</p>
-</blockquote>
-<h4 id="从Anaconda-org安装一个包"><a href="#从Anaconda-org安装一个包" class="headerlink" title="从Anaconda.org安装一个包"></a>从Anaconda.org安装一个包</h4><blockquote>
-<p>如果一个包不能使用conda安装，我们接下来将在Anaconda.org网站查找。所以在左上角的叫“Search Anaconda Cloud”搜索框中输入“bottleneck”并点击search按钮。Anaconda.org上会有超过一打的bottleneck包的版本可用，但是我们想要那个被下载最频繁的版本。所以你可以通过下载量来排序，通过点击Download栏。点击包的名字来选择最常被下载的包。它会链接到Anaconda.org详情页显示下载的具体命令：</p>
-<p>conda install -c rahuljain bottleneck=1.0.0</p>
-</blockquote>
-<h4 id="通过pip命令来安装包"><a href="#通过pip命令来安装包" class="headerlink" title="通过pip命令来安装包"></a>通过pip命令来安装包</h4><blockquote>
-<p>对于那些无法通过conda安装或者从Anaconda.org获得的包，我们通常可以用pip来安装包。pip只是一个包管理器，所以它不能为你管理环境。pip甚至不能升级python，因为它不像conda一样把python当做包来处理。pip和conda都集成在Anaconda或miniconda里边。例如，通过pip安装一个叫“See”的程序</p>
-<p>pip install see</p>
-</blockquote>
-<h4 id="删除所安装的包"><a href="#删除所安装的包" class="headerlink" title="删除所安装的包"></a>删除所安装的包</h4><blockquote>
-<p>conda remove beautifulsoup4</p>
-</blockquote>
-<h3 id="设置国内镜像"><a href="#设置国内镜像" class="headerlink" title="设置国内镜像"></a>设置国内镜像</h3><blockquote>
-<p>如果需要安装很多packages，你会发现conda下载的速度经常很慢，因为Anaconda.org的服务器在国外。所幸的是，清华TUNA镜像源有Anaconda仓库的镜像，我们将其加入conda的配置即可：</p>
-</blockquote>
-<h4 id="添加Anaconda的TUNA镜像"><a href="#添加Anaconda的TUNA镜像" class="headerlink" title="添加Anaconda的TUNA镜像"></a>添加Anaconda的TUNA镜像</h4><blockquote>
-<p>conda config –add channels &gt; <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/" target="_blank" rel="external">https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</a></p>
-</blockquote>
-<h4 id="设置搜索时显示通道地址"><a href="#设置搜索时显示通道地址" class="headerlink" title="设置搜索时显示通道地址"></a>设置搜索时显示通道地址</h4><blockquote>
-<p>conda config –set show_channel_urls yes</p>
-</blockquote>
-<h3 id="参考文献及扩展阅读"><a href="#参考文献及扩展阅读" class="headerlink" title="参考文献及扩展阅读"></a>参考文献及扩展阅读</h3><ul>
-<li><a href="http://www.jianshu.com/p/2f3be7781451" target="_blank" rel="external">Anaconda使用总结</a></li>
-<li><a href="http://wrran.com/blog/2016/11/22/howto-conda/" target="_blank" rel="external">conda使用教程</a></li>
-<li><a href="https://conda.io/docs/test-drive.html" target="_blank" rel="external">conda官方文档说明</a></li>
-</ul>
-
-            
-          </span>
+          <h3 id="conda的环境管理"><a href="#conda的环境管理" class="headerlink" title="conda的环境管理"></a>conda的环境管理</h3><blockquote>
+<p>Conda的环境管理功能允许我们同时安装若干不同版本的Python，并能自由切换。假设我们采用的是Python3.6对应的安装包，那么Python3.6就是默认的环境,假设我们需要安装Python3.4，此时，打开Anacon daprompt命令行工具， 我们需要做的操作如下:<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/04/17/第4天-学习python/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
