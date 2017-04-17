@@ -49,7 +49,7 @@ Conda的环境管理功能允许我们同时安装若干不同版本的Python，
 <meta property="og:site_name" content="在水一方">
 <meta property="og:description" content="conda的环境管理
 Conda的环境管理功能允许我们同时安装若干不同版本的Python，并能自由切换。假设我们采用的是Python3.6对应的安装包，那么Python3.6就是默认的环境,假设我们需要安装Python3.4，此时，打开Anacon daprompt命令行工具， 我们需要做的操作如下:">
-<meta property="og:updated_time" content="2017-04-17T04:55:49.022Z">
+<meta property="og:updated_time" content="2017-04-17T05:01:45.926Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第4天-学习python">
 <meta name="twitter:description" content="conda的环境管理
@@ -231,11 +231,14 @@ Conda的环境管理功能允许我们同时安装若干不同版本的Python，
 
       
         <span itemprop="articleBody"><h3 id="conda的环境管理"><a href="#conda的环境管理" class="headerlink" title="conda的环境管理"></a>conda的环境管理</h3><blockquote>
-<p>Conda的环境管理功能允许我们同时安装若干不同版本的Python，并能自由切换。假设我们采用的是Python3.6对应的安装包，那么Python3.6就是默认的环境,假设我们需要安装Python3.4，此时，打开Anacon daprompt命令行工具， 我们需要做的操作如下:<br><a id="more"></a></p>
+<p>Conda的环境管理功能允许我们同时安装若干不同版本的Python，并能自由切换。假设我们采用的是Python3.6对应的安装包，那么Python3.6就是默认的环境,假设我们需要安装Python3.4，此时，打开Anacon daprompt命令行工具， 我们需要做的操作如下:</p>
+</blockquote>
+<a id="more"></a>
 <ul>
 <li>创建一个名为python27的环境，指定Python版本是2.7（不用管是2.7.x，conda会为我们自动寻找2.7.x中的最新版本）</li>
 </ul>
-<p>conda create –name python27 python=2.7</p>
+<blockquote>
+<p>‘conda create –name python27 python=2.7’</p>
 </blockquote>
 <ul>
 <li>安装好后，使用activate激活某个环境</li>
@@ -290,7 +293,7 @@ Conda的环境管理功能允许我们同时安装若干不同版本的Python，
 <h4 id="删除所安装的包"><a href="#删除所安装的包" class="headerlink" title="删除所安装的包"></a>删除所安装的包</h4><blockquote>
 <p>conda remove beautifulsoup4</p>
 </blockquote>
-<h3 id="设置国内镜像"><a href="#设置国内镜像" class="headerlink" title="设置国内镜像"></a>设置国内镜像</h3><blockquote>
+<h4 id="设置国内镜像"><a href="#设置国内镜像" class="headerlink" title="设置国内镜像"></a>设置国内镜像</h4><blockquote>
 <p>如果需要安装很多packages，你会发现conda下载的速度经常很慢，因为Anaconda.org的服务器在国外。所幸的是，清华TUNA镜像源有Anaconda仓库的镜像，我们将其加入conda的配置即可：</p>
 </blockquote>
 <h4 id="添加Anaconda的TUNA镜像"><a href="#添加Anaconda的TUNA镜像" class="headerlink" title="添加Anaconda的TUNA镜像"></a>添加Anaconda的TUNA镜像</h4><blockquote>
@@ -434,7 +437,7 @@ Conda的环境管理功能允许我们同时安装若干不同版本的Python，
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#conda的环境管理"><span class="nav-number">1.</span> <span class="nav-text">conda的环境管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#conda包的管理"><span class="nav-number">2.</span> <span class="nav-text">conda包的管理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#从Anaconda-org安装一个包"><span class="nav-number">2.1.</span> <span class="nav-text">从Anaconda.org安装一个包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#通过pip命令来安装包"><span class="nav-number">2.2.</span> <span class="nav-text">通过pip命令来安装包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除所安装的包"><span class="nav-number">2.3.</span> <span class="nav-text">删除所安装的包</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置国内镜像"><span class="nav-number">3.</span> <span class="nav-text">设置国内镜像</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#添加Anaconda的TUNA镜像"><span class="nav-number">3.1.</span> <span class="nav-text">添加Anaconda的TUNA镜像</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置搜索时显示通道地址"><span class="nav-number">3.2.</span> <span class="nav-text">设置搜索时显示通道地址</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考文献及扩展阅读"><span class="nav-number">4.</span> <span class="nav-text">参考文献及扩展阅读</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#conda的环境管理"><span class="nav-number">1.</span> <span class="nav-text">conda的环境管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#conda包的管理"><span class="nav-number">2.</span> <span class="nav-text">conda包的管理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#从Anaconda-org安装一个包"><span class="nav-number">2.1.</span> <span class="nav-text">从Anaconda.org安装一个包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#通过pip命令来安装包"><span class="nav-number">2.2.</span> <span class="nav-text">通过pip命令来安装包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除所安装的包"><span class="nav-number">2.3.</span> <span class="nav-text">删除所安装的包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置国内镜像"><span class="nav-number">2.4.</span> <span class="nav-text">设置国内镜像</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加Anaconda的TUNA镜像"><span class="nav-number">2.5.</span> <span class="nav-text">添加Anaconda的TUNA镜像</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置搜索时显示通道地址"><span class="nav-number">2.6.</span> <span class="nav-text">设置搜索时显示通道地址</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考文献及扩展阅读"><span class="nav-number">3.</span> <span class="nav-text">参考文献及扩展阅读</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
