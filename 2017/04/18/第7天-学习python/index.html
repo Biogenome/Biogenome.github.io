@@ -32,7 +32,7 @@
 
 
 
-  <meta name="keywords" content="生活," />
+  <meta name="keywords" content="技术," />
 
 
 
@@ -41,16 +41,40 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
 
 
-<meta name="description" content="莫听穿林打叶声何妨吟啸且徐行？竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生料峭春风吹酒醒，微冷，山头斜照却相迎回首向来萧瑟处，归去，也无风雨也无晴">
+<meta name="description" content="使用列表(list)和元组(tuple)列表
+列表是Python内置的一种数据类型，可以随时添加和删除其中的元素。
+
+
+用len()函数可以获得list元素的个数.
+
+用索引来访问list中每一个位置的元素，索引是从0开始.
+
+如果要取最后一个元素，除了计算索引位置外，还可以用-1做索引，直接获取最后一个元素.以此类推，可以获取倒数第2个、倒数第3个,如[-2],[-3]等.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="熊熊">
-<meta property="og:url" content="http://www.biogenome.github.io/2017/03/06/tags-生活/index.html">
+<meta property="og:title" content="第7天-学习python">
+<meta property="og:url" content="http://www.biogenome.github.io/2017/04/18/第7天-学习python/index.html">
 <meta property="og:site_name" content="在水一方">
-<meta property="og:description" content="莫听穿林打叶声何妨吟啸且徐行？竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生料峭春风吹酒醒，微冷，山头斜照却相迎回首向来萧瑟处，归去，也无风雨也无晴">
-<meta property="og:updated_time" content="2017-04-07T08:28:14.379Z">
+<meta property="og:description" content="使用列表(list)和元组(tuple)列表
+列表是Python内置的一种数据类型，可以随时添加和删除其中的元素。
+
+
+用len()函数可以获得list元素的个数.
+
+用索引来访问list中每一个位置的元素，索引是从0开始.
+
+如果要取最后一个元素，除了计算索引位置外，还可以用-1做索引，直接获取最后一个元素.以此类推，可以获取倒数第2个、倒数第3个,如[-2],[-3]等.">
+<meta property="og:updated_time" content="2017-04-18T13:15:29.732Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="熊熊">
-<meta name="twitter:description" content="莫听穿林打叶声何妨吟啸且徐行？竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生料峭春风吹酒醒，微冷，山头斜照却相迎回首向来萧瑟处，归去，也无风雨也无晴">
+<meta name="twitter:title" content="第7天-学习python">
+<meta name="twitter:description" content="使用列表(list)和元组(tuple)列表
+列表是Python内置的一种数据类型，可以随时添加和删除其中的元素。
+
+
+用len()函数可以获得list元素的个数.
+
+用索引来访问list中每一个位置的元素，索引是从0开始.
+
+如果要取最后一个元素，除了计算索引位置外，还可以用-1做索引，直接获取最后一个元素.以此类推，可以获取倒数第2个、倒数第3个,如[-2],[-3]等.">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -62,7 +86,7 @@
 
 
 
-  <title> 熊熊 | 在水一方 </title>
+  <title> 第7天-学习python | 在水一方 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -179,7 +203,7 @@
             
             
               
-                熊熊
+                第7天-学习python
               
             
           </h1>
@@ -188,11 +212,26 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2017-03-06T22:22:49+08:00" content="2017-03-06">
-              2017-03-06
+            <time itemprop="dateCreated" datetime="2017-04-18T14:04:00+08:00" content="2017-04-18">
+              2017-04-18
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -212,9 +251,62 @@
       
 
       
-        <span itemprop="articleBody"><blockquote>
-<p>莫听穿林打叶声<br>何妨吟啸且徐行？<br>竹杖芒鞋轻胜马，谁怕？<br>一蓑烟雨任平生<br>料峭春风吹酒醒，微冷，山头斜照却相迎<br>回首向来萧瑟处，归去，也无风雨也无晴</p>
+        <span itemprop="articleBody"><h3 id="使用列表-list-和元组-tuple"><a href="#使用列表-list-和元组-tuple" class="headerlink" title="使用列表(list)和元组(tuple)"></a>使用列表(list)和元组(tuple)</h3><h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><blockquote>
+<p>列表是Python内置的一种数据类型，可以随时添加和删除其中的元素。</p>
 </blockquote>
+<ol>
+<li><p>用<code>len()</code>函数可以获得list元素的个数.</p>
+</li>
+<li><p>用索引来访问list中每一个位置的元素，索引是从<code>0</code>开始.</p>
+</li>
+<li><p>如果要取最后一个元素，除了计算索引位置外，还可以用<code>-1</code>做索引，直接获取最后一个元素.以此类推，可以获取倒数第2个、倒数第3个,如[-2],[-3]等.</p>
+<a id="more"></a>
+<blockquote>
+<ol>
+<li>list是一个可变的有序表，所以，可以往list中追加元素到末尾,例如<code>classmates = [&#39;Michael&#39;, &#39;Bob&#39;, &#39;Tracy&#39;]</code>，输入命令<code>classmates.append(&#39;Adam&#39;)</code>，则 <code>classmates=[&#39;Michael&#39;, &#39;Bob&#39;, &#39;Tracy&#39;, &#39;Adam&#39;]</code>.也可以把元素插入到指定的位置，比如索引号为<code>1</code>的位置,classmates.insert(1, ‘Jack’).  </li>
+<li>要删除list末尾的元素，用<code>pop()</code>方法,例如<code>classmates.pop()</code>,要删除指定位置的元素，用<code>pop(i)</code>方法，其中<code>i</code>是索引位置.  </li>
+<li>要把某个元素替换成别的元素，可以直接赋值给对应的索引位置,如<code>classmates[1] = &#39;Sarah&#39;</code>.  </li>
+<li>list里面的元素的数据类型也可以不同,list元素也可以是另一个list.如果一个list中一个元素也没有，就是一个空的list，它的长度为0</li>
+</ol>
+</blockquote>
+<h3 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h3><blockquote>
+<p>tuple和list非常类似，但是tuple一旦初始化就不能修改.它也没有append()，insert()这样的方法。其他获取元素的方法和list是一样的,因为tuple不可变，所以代码更安全。如果可能，能用tuple代替list就尽量用tuple.  </p>
+<ol>
+<li>要定义一个只有1个元素的tuple,为了防止和数学公式中的小括号产生歧义，规定只有1个元素的tuple定义时必须加一个逗号<code>,</code>，来消除歧义，例如<code>t = (1,)</code>.</li>
+</ol>
+</blockquote>
+<h3 id="条件判断"><a href="#条件判断" class="headerlink" title="条件判断"></a>条件判断</h3><blockquote>
+<p>计算机之所以能做很多自动化的任务，因为它可以自己做条件判断。在Python程序中，用<code>if</code>语句实现.也可以给<code>if</code>添加一个<code>else</code>语句，意思是，如果<code>if</code>判断是<code>False</code>，不要执行<code>if</code>的内容，去把<code>else</code>执行了.也可以用<code>elif</code>做更细致的判断。</p>
+<ol>
+<li><code>if</code>语句是从上往下判断，如果在某个判断上是<code>True</code>，把该判断对应的语句执行后，就忽略掉剩下的<code>elif</code>和<code>else</code>.</li>
+</ol>
+</blockquote>
+<h3 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h3><blockquote>
+<p> 为了让计算机能计算成千上万次的重复运算，我们就需要循环语句,Python的循环有两种，一种是for…in循环，依次把list或tuple中的每个元素迭代出来,第二种循环是while循环，只要条件满足，就不断循环，条件不满足时退出循环.</p>
+<ol>
+<li>在循环中，<code>break</code>语句可以提前退出循环.</li>
+<li>在循环过程中，也可以通过<code>continue</code>语句，跳过当前的这次循环，直接开始下一次循环.</li>
+</ol>
+</blockquote>
+<h3 id="使用dict和set"><a href="#使用dict和set" class="headerlink" title="使用dict和set"></a>使用dict和set</h3><blockquote>
+<ul>
+<li>dict全称dictionary，在其他语言中也称为map，使用键-值（key-value）存储，具有极快的查找速度。</li>
+</ul>
+<ol>
+<li>一个key只能对应一个value，所以，多次对一个key放入value，后面的值会把前面的值冲掉.要避免key不存在的错误，有两种办法，一是通过<code>in</code>判断key是否存在,二是通过dict提供的get方法，如果key不存在，可以返回None，或者自己指定的value.</li>
+<li>要删除一个key，用<code>pop(key)</code>方法，对应的value也会从dict中删除.</li>
+<li>dict的key必须是<strong>不可变对象</strong>,这个通过key计算位置的算法称为哈希算法（Hash）,在Python中，字符串、整数等都是不可变的，因此，可以放心地作为key。而list是可变的，就不能作为key.</li>
+</ol>
+<ul>
+<li>set和dict类似，也是一组key的集合，但不存储value。由于key不能重复，所以，在set中，没有重复的key,重复元素在set中自动被过滤</li>
+</ul>
+<ol>
+<li>通过<code>add(key)</code>方法可以添加元素,通过<code>remove(key)</code>方法可以删除元素</li>
+<li>set可以看成数学意义上的无序和无重复元素的集合，因此，两个set可以做数学意义上的交集、并集等操作.</li>
+</ol>
+</blockquote>
+</li>
+</ol>
 </span>
       
     </div>
@@ -223,7 +315,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/生活/" rel="tag">#生活</a>
+            <a href="/tags/技术/" rel="tag">#技术</a>
           
         </div>
       
@@ -232,13 +324,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/04/18/第6天-学习python/" rel="next" title="第6天-学习python">
+                <i class="fa fa-chevron-left"></i> 第6天-学习python
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/04/10/庐山游记/" rel="prev" title="庐山游记">
-                庐山游记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -345,7 +437,7 @@
           <div class="post-toc">
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用列表-list-和元组-tuple"><span class="nav-number">1.</span> <span class="nav-text">使用列表(list)和元组(tuple)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#列表"><span class="nav-number">1.1.</span> <span class="nav-text">列表</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元组"><span class="nav-number">2.</span> <span class="nav-text">元组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#条件判断"><span class="nav-number">3.</span> <span class="nav-text">条件判断</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#循环"><span class="nav-number">4.</span> <span class="nav-text">循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用dict和set"><span class="nav-number">5.</span> <span class="nav-text">使用dict和set</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
