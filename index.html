@@ -231,51 +231,18 @@
 
       
         
-          <span itemprop="articleBody">
-            
-              <h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><blockquote>
+          <h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><blockquote>
 <p>基本上所有的高级语言都支持函数，Python也不例外。Python不但能非常灵活地定义函数，而且本身内置了很多有用的函数，可以直接调用。</p>
 </blockquote>
 <h4 id="1-调用函数"><a href="#1-调用函数" class="headerlink" title="1.  调用函数"></a>1.  调用函数</h4><ul>
-<li>Python内置了很多有用的函数，我们可以直接调用,要调用一个函数，需要知道函数的名称和参数.可以从官方文档查看函数和参数<a href="https://docs.python.org/3/library/functions.html" target="_blank" rel="external">官方文档说明</a></li>
-<li>调用函数的时候,要确保传入的参数数量和参数类型无误，负责会发生<code>Tpyeerror</code>的错误</li>
-</ul>
-<blockquote>
-<p>调用函数时，如果参数个数不对，Python解释器会自动检查出来，并抛出<code>TypeError</code>,但是如果参数类型不对，Python解释器就无法帮我们检查.数据类型检查可以用内置函数<code>isinstance()</code>实现.</p>
-</blockquote>
-<ul>
-<li>Python的函数定义非常简单，但灵活度却非常大。除了正常定义的必选参数外，还可以使用默认参数、可变参数和关键字参数.</li>
-</ul>
-<blockquote>
-<ol>
-<li>必选参数在前，默认参数在后，否则Python的解释器会报错.</li>
-<li>函数有多个参数时，把变化大的参数放前面，变化小的参数放后面。变化小的参数就可以作为默认参数</li>
-</ol>
-</blockquote>
-<h4 id="2-数据类型转换"><a href="#2-数据类型转换" class="headerlink" title="2. 数据类型转换"></a>2. 数据类型转换</h4><ul>
-<li>Python内置的常用函数还包括数据类型转换函数，比如<code>int()</code>函数可以把其他数据类型转换为整数</li>
-<li>函数名其实就是指向一个函数对象的引用，完全可以把函数名赋给一个变量，相当于给这个函数起了一个“别名.  </li>
-</ul>
-<h3 id="定义函数"><a href="#定义函数" class="headerlink" title="定义函数"></a>定义函数</h3><blockquote>
-<p>在Python中，定义一个函数要使用<code>def</code>语句，依次写出函数名、括号、括号中的参数和冒号<code>:</code>，然后，在缩进块中编写函数体，函数的返回值用<code>return</code>语句返回。</p>
-</blockquote>
-<ol>
-<li>函数体内部的语句在执行时，一旦执行到<code>return</code>时，函数就执行完毕，并将结果返回.</li>
-<li>如果没有<code>return</code>语句，函数执行完毕后也会返回结果，只是结果为<code>None</code></li>
-<li>在Python交互环境中定义函数时，注意Python会出现<code>...</code>的提示。函数定义结束后需要按两次回车重新回到<code>&gt;&gt;&gt;</code>提示符下.</li>
-</ol>
-<h4 id="空函数"><a href="#空函数" class="headerlink" title="空函数"></a>空函数</h4><blockquote>
-<p>如果想定义一个什么事也不做的空函数，可以用<code>pass</code>语句,实际上<code>pass</code>可以用来作为占位符，比如现在还没想好怎么写函数的代码，就可以先放一个<code>pass</code>，让代码能运行起来。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; ​```python</span><br><span class="line">&gt; def nop():</span><br><span class="line">&gt; 	pass</span><br><span class="line">&gt; ​</span><br></pre></td></tr></table></figure>
-<p>```</p>
-</blockquote>
-<h3 id="参数组合"><a href="#参数组合" class="headerlink" title="参数组合"></a>参数组合</h3><ul>
-<li>在Python中定义函数，可以用必选参数、默认参数、可变参数、关键字参数和命名关键字参数，这5种参数都可以组合使用。但是请注意，参数定义的顺序必须是：必选参数、默认参数、可变参数、命名关键字参数和关键字参数。</li>
-</ul>
-<h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><p><a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001431752945034eb82ac80a3e64b9bb4929b16eeed1eb9000#0" target="_blank" rel="external">廖雪峰的官方网站</a></p>
-
-            
-          </span>
+<li><p>Python内置了很多有用的函数，我们可以直接调用,要调用一个函数，需要知道函数的名称和参数.可以从官方文档查看函数和参数<a href="https://docs.python.org/3/library/functions.html">官方文档说明</a></p>
+</li>
+<li><p>调用函数的时候,要确保传入的参数数量和参数类型无误，负责会发生<code>Tpyeerror</code>的错误</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/04/19/第8天-学习python/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
