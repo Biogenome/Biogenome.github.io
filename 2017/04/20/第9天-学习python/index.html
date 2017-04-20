@@ -32,7 +32,7 @@
 
 
 
-  <meta name="keywords" content="生活," />
+  <meta name="keywords" content="技术," />
 
 
 
@@ -41,16 +41,28 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
 
 
-<meta name="description" content="莫听穿林打叶声何妨吟啸且徐行？竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生料峭春风吹酒醒，微冷，山头斜照却相迎回首向来萧瑟处，归去，也无风雨也无晴">
+<meta name="description" content="爬虫基本结构
+正常通过浏览器可以获取的数据，爬虫都可以获取,爬虫的本质是一个服务端，实现的功能类似于浏览器.是一种自动获取网页内容的程序。是搜索引擎的重要组成部分.我们需要干的事情其实就两件事情：找到我们需要的网页，然后把他们一个一个处理一遍。所以，爬虫的核心模块有三个：请求、解析、储存
+
+
+对于单个页面来说，入口的来源有两种，一种是已知地址,另外一种是你可以通过前面爬下来的网页中获取入口.例如浏">
 <meta property="og:type" content="article">
-<meta property="og:title" content="熊熊">
-<meta property="og:url" content="http://www.biogenome.github.io/2017/03/06/tags-生活/index.html">
+<meta property="og:title" content="第9天-学习python">
+<meta property="og:url" content="http://www.biogenome.github.io/2017/04/20/第9天-学习python/index.html">
 <meta property="og:site_name" content="在水一方">
-<meta property="og:description" content="莫听穿林打叶声何妨吟啸且徐行？竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生料峭春风吹酒醒，微冷，山头斜照却相迎回首向来萧瑟处，归去，也无风雨也无晴">
-<meta property="og:updated_time" content="2017-04-07T08:28:14.379Z">
+<meta property="og:description" content="爬虫基本结构
+正常通过浏览器可以获取的数据，爬虫都可以获取,爬虫的本质是一个服务端，实现的功能类似于浏览器.是一种自动获取网页内容的程序。是搜索引擎的重要组成部分.我们需要干的事情其实就两件事情：找到我们需要的网页，然后把他们一个一个处理一遍。所以，爬虫的核心模块有三个：请求、解析、储存
+
+
+对于单个页面来说，入口的来源有两种，一种是已知地址,另外一种是你可以通过前面爬下来的网页中获取入口.例如浏">
+<meta property="og:updated_time" content="2017-04-20T06:32:50.406Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="熊熊">
-<meta name="twitter:description" content="莫听穿林打叶声何妨吟啸且徐行？竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生料峭春风吹酒醒，微冷，山头斜照却相迎回首向来萧瑟处，归去，也无风雨也无晴">
+<meta name="twitter:title" content="第9天-学习python">
+<meta name="twitter:description" content="爬虫基本结构
+正常通过浏览器可以获取的数据，爬虫都可以获取,爬虫的本质是一个服务端，实现的功能类似于浏览器.是一种自动获取网页内容的程序。是搜索引擎的重要组成部分.我们需要干的事情其实就两件事情：找到我们需要的网页，然后把他们一个一个处理一遍。所以，爬虫的核心模块有三个：请求、解析、储存
+
+
+对于单个页面来说，入口的来源有两种，一种是已知地址,另外一种是你可以通过前面爬下来的网页中获取入口.例如浏">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -62,7 +74,7 @@
 
 
 
-  <title> 熊熊 | 在水一方 </title>
+  <title> 第9天-学习python | 在水一方 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -179,7 +191,7 @@
             
             
               
-                熊熊
+                第9天-学习python
               
             
           </h1>
@@ -188,11 +200,26 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2017-03-06T22:22:49+08:00" content="2017-03-06">
-              2017-03-06
+            <time itemprop="dateCreated" datetime="2017-04-20T10:17:44+08:00" content="2017-04-20">
+              2017-04-20
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -212,9 +239,48 @@
       
 
       
-        <span itemprop="articleBody"><blockquote>
-<p>莫听穿林打叶声<br>何妨吟啸且徐行？<br>竹杖芒鞋轻胜马，谁怕？<br>一蓑烟雨任平生<br>料峭春风吹酒醒，微冷，山头斜照却相迎<br>回首向来萧瑟处，归去，也无风雨也无晴</p>
+        <span itemprop="articleBody"><h3 id="爬虫基本结构"><a href="#爬虫基本结构" class="headerlink" title="爬虫基本结构"></a>爬虫基本结构</h3><blockquote>
+<p>正常通过浏览器可以获取的数据，爬虫都可以获取,爬虫的本质是一个服务端，实现的功能类似于浏览器.是一种自动获取网页内容的程序。是<a href="http://baike.baidu.com/item/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E" target="_blank" rel="external">搜索引擎</a>的重要组成部分.我们需要干的事情其实就两件事情：找到我们需要的网页，然后把他们一个一个处理一遍。所以，爬虫的核心模块有三个：<strong>请求、解析、储存</strong></p>
 </blockquote>
+<ul>
+<li>对于单个页面来说，入口的来源有两种，一种是已知地址,另外一种是你可以通过前面爬下来的网页中获取入口.例如浏览网页的过程，用户输入网址之后，经过 DNS 服务器，找到服务器主机，向服务器发出一个请求，服务器经过解析之后，发送给用户的浏览器 HTML、JS、CSS 等文件，浏览器解析出来，用户看到的网页实质是由 HTML 代码构成的，通过分析和过滤这些 HTML 代码，实现资源的获取。</li>
+</ul>
+<a id="more"></a>
+<h4 id="http协议"><a href="#http协议" class="headerlink" title="http协议"></a>http协议</h4><blockquote>
+<p>所谓HTTP协议，中文名是超文本传输协议。HTTP是基于TCP/IP的关于数据如何在万维网中如何通信的协议,这是一种可靠的可以把各种各样格式的文件在互联网上传输的协议。HTTP协议的传输主要通过HTTP报文实现的.</p>
+</blockquote>
+<ol>
+<li>客户端（比如浏览器） ：发送请求报文到服务器,客户端请求的方法也是不一样的,最常见的的一种是get方法，一种是post方法，两种的具体区别及联系参见文章<a href="https://zhuanlan.zhihu.com/p/21394571" target="_blank" rel="external">请求</a></li>
+<li>服务器：接收请求报文并处理</li>
+<li>服务器：发送响应报文给客户端</li>
+<li>客户端：处理接收到的内容。</li>
+</ol>
+<h4 id="URL的含义"><a href="#URL的含义" class="headerlink" title="URL的含义"></a>URL的含义</h4><blockquote>
+<p>URL，即统一资源定位符，也就是我们说的网址,互联网上的每个文件都有一个唯一的URL，它包含的信息指出文件的位置以及浏览器应该怎么处理它。</p>
+</blockquote>
+<ul>
+<li>URL 的格式由三部分组成：</li>
+</ul>
+<ol>
+<li>第一部分是协议(或称为服务方式)。</li>
+<li>第二部分是存有该资源的主机IP地址(有时也包括端口号)。</li>
+<li>第三部分是主机资源的具体地址，如目录和文件名等。</li>
+</ol>
+<ul>
+<li>IP地址.在生活中我们使用具有上网功能的电子设备都有IP地址，就跟每个人都有自己的名字一样。IP地址分为IPV4 IPV6，我们所说的的IP地址指的是IPV4的地址。IP地址是由两部分组成的，网络部分和主机部分.</li>
+</ul>
+<h3 id="爬虫必备-requests"><a href="#爬虫必备-requests" class="headerlink" title="爬虫必备 requests"></a>爬虫必备 requests</h3><blockquote>
+<p>Requests是一个基于Apache2协议开源的Python HTTP库，号称是“为人类准备的HTTP库”,用于request.</p>
+</blockquote>
+<h3 id="参考文献及扩展阅读"><a href="#参考文献及扩展阅读" class="headerlink" title="参考文献及扩展阅读"></a>参考文献及扩展阅读</h3><ol>
+<li><p><a href="http://wiki.jikexueyuan.com/project/python-crawler-guide/understand-the-basic.html" target="_blank" rel="external">爬虫基础了解</a></p>
+</li>
+<li><p><a href="https://zhuanlan.zhihu.com/p/21394571" target="_blank" rel="external">Python爬虫入门</a></p>
+</li>
+<li><p><a href="http://kzmoon.me/2016/05/25/PythonRequests/" target="_blank" rel="external">Python标准库requests</a></p>
+<p>​</p>
+</li>
+</ol>
 </span>
       
     </div>
@@ -223,7 +289,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/生活/" rel="tag">#生活</a>
+            <a href="/tags/技术/" rel="tag">#技术</a>
           
         </div>
       
@@ -232,13 +298,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/04/19/第8天-学习python/" rel="next" title="第8天-学习python">
+                <i class="fa fa-chevron-left"></i> 第8天-学习python
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/04/10/庐山游记/" rel="prev" title="庐山游记">
-                庐山游记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -345,7 +411,7 @@
           <div class="post-toc">
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#爬虫基本结构"><span class="nav-number">1.</span> <span class="nav-text">爬虫基本结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#http协议"><span class="nav-number">1.1.</span> <span class="nav-text">http协议</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#URL的含义"><span class="nav-number">1.2.</span> <span class="nav-text">URL的含义</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#爬虫必备-requests"><span class="nav-number">2.</span> <span class="nav-text">爬虫必备 requests</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考文献及扩展阅读"><span class="nav-number">3.</span> <span class="nav-text">参考文献及扩展阅读</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
