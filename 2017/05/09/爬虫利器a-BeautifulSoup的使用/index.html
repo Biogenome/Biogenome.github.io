@@ -32,7 +32,7 @@
 
 
 
-  <meta name="keywords" content="生活," />
+  <meta name="keywords" content="python爬虫," />
 
 
 
@@ -41,16 +41,19 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
 
 
-<meta name="description" content="莫听穿林打叶声何妨吟啸且徐行？竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生料峭春风吹酒醒，微冷，山头斜照却相迎回首向来萧瑟处，归去，也无风雨也无晴">
+<meta name="description" content="BeautifulSoup简介
+Beautiful Soup是python的一个库,通过解析文档为用户提供需要抓取的数据,Beautiful Soup自动将输入文档转换为Unicode编码，输出文档转换为utf-8编码。为用户灵活地提供不同的解析策略或强劲的速度。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="熊熊">
-<meta property="og:url" content="http://www.biogenome.github.io/2017/03/06/tags-生活/index.html">
+<meta property="og:title" content="爬虫利器å-BeautifulSoup的使用">
+<meta property="og:url" content="http://www.biogenome.github.io/2017/05/09/爬虫利器a-BeautifulSoup的使用/index.html">
 <meta property="og:site_name" content="在水一方">
-<meta property="og:description" content="莫听穿林打叶声何妨吟啸且徐行？竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生料峭春风吹酒醒，微冷，山头斜照却相迎回首向来萧瑟处，归去，也无风雨也无晴">
-<meta property="og:updated_time" content="2017-04-07T08:28:14.379Z">
+<meta property="og:description" content="BeautifulSoup简介
+Beautiful Soup是python的一个库,通过解析文档为用户提供需要抓取的数据,Beautiful Soup自动将输入文档转换为Unicode编码，输出文档转换为utf-8编码。为用户灵活地提供不同的解析策略或强劲的速度。">
+<meta property="og:updated_time" content="2017-05-09T13:51:00.375Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="熊熊">
-<meta name="twitter:description" content="莫听穿林打叶声何妨吟啸且徐行？竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生料峭春风吹酒醒，微冷，山头斜照却相迎回首向来萧瑟处，归去，也无风雨也无晴">
+<meta name="twitter:title" content="爬虫利器å-BeautifulSoup的使用">
+<meta name="twitter:description" content="BeautifulSoup简介
+Beautiful Soup是python的一个库,通过解析文档为用户提供需要抓取的数据,Beautiful Soup自动将输入文档转换为Unicode编码，输出文档转换为utf-8编码。为用户灵活地提供不同的解析策略或强劲的速度。">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -62,7 +65,7 @@
 
 
 
-  <title> 熊熊 | 在水一方 </title>
+  <title> 爬虫利器å-BeautifulSoup的使用 | 在水一方 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -187,7 +190,7 @@
             
             
               
-                熊熊
+                爬虫利器å-BeautifulSoup的使用
               
             
           </h1>
@@ -196,11 +199,26 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2017-03-06T22:22:49+08:00" content="2017-03-06">
-              2017-03-06
+            <time itemprop="dateCreated" datetime="2017-05-09T19:55:00+08:00" content="2017-05-09">
+              2017-05-09
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -220,9 +238,60 @@
       
 
       
-        <span itemprop="articleBody"><blockquote>
-<p>莫听穿林打叶声<br>何妨吟啸且徐行？<br>竹杖芒鞋轻胜马，谁怕？<br>一蓑烟雨任平生<br>料峭春风吹酒醒，微冷，山头斜照却相迎<br>回首向来萧瑟处，归去，也无风雨也无晴</p>
+        <span itemprop="articleBody"><h3 id="BeautifulSoup简介"><a href="#BeautifulSoup简介" class="headerlink" title="BeautifulSoup简介"></a>BeautifulSoup简介</h3><blockquote>
+<p>Beautiful Soup是python的一个库,通过解析文档为用户提供需要抓取的数据,Beautiful Soup自动将输入文档转换为Unicode编码，输出文档转换为utf-8编码。为用户灵活地提供不同的解析策略或强劲的速度。</p>
 </blockquote>
+<a id="more"></a>
+<h4 id="BeautifulSoup安装"><a href="#BeautifulSoup安装" class="headerlink" title="BeautifulSoup安装"></a>BeautifulSoup安装</h4><p>现在的项目中使用Beautiful Soup 4，不过它已经被移植到BS4了，也就是说导入时我们需要 import bs4 。在Anaconda安装方式如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install BeautifulSoup</span><br></pre></td></tr></table></figure>
+<p> Beautiful Soup支持Python标准库中的HTML解析器,例如“html.parser”还支持一些第三方的解析器，如果我们不安装它，则 Python 会使用    Python默认的解析器，lxml 解析器是一个基于c语言开发的解析器，更加强大，速度更快，需要额外进行安装。</p>
+<p>构建一个 BeautifulSoup 对象需要两个参数，第一个参数是将要解析的 HTML 文本字符串，第二个参数告诉 BeautifulSoup  使用哪个解析器来解析 HTML。解析器负责把 HTML 解析成相关的对象</p>
+<h4 id="创建-Beautiful-Soup-对象"><a href="#创建-Beautiful-Soup-对象" class="headerlink" title="创建 Beautiful Soup 对象"></a>创建 Beautiful Soup 对象</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">from bs4 import BeautifulSoup</span><br></pre></td></tr></table></figure>
+<h3 id="四大对象种类"><a href="#四大对象种类" class="headerlink" title="四大对象种类"></a>四大对象种类</h3><ul>
+<li>Tag</li>
+</ul>
+<blockquote>
+<p>Tag是HTML 中的一个个标签,例如如下形式, title a 等等 HTML 标签加上里面包括的内容就是 Tag，通过 BeautifulSoup 对象可以定位到 HTML 中的任何一个标签节点。每个 Tag 都有一个名字，它对应 HTML 的标签名称。标签还可以有属性，属性的访问方式和字典是类似的，它返回一个列表对象</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;title&gt;The Dormouse&apos;s story&lt;/title&gt;</span><br><span class="line">&lt;p class=&quot;sister&quot; href=&quot;http://example.com/elsie&quot; id=&quot;link1&quot;&gt;Elsie&lt;/p&gt;</span><br><span class="line">soup.p  #查找P标签，它查找的是在所有内容中的第一个符合要求的标签</span><br><span class="line">soup.p[&apos;class&apos;] #p标签的属性</span><br><span class="line">[u&apos;bold&apos;]</span><br><span class="line">soup.p[&apos;class&apos;]=“new class&quot; #对class属性进行修改</span><br><span class="line">&lt;p class=“new class&quot; href=&quot;http://example.com/elsie&quot; id=&quot;link1&quot;&gt;Elsie&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Navigablestring</li>
+</ul>
+<blockquote>
+<p>获取标签中的内容，直接使用 <em>.stirng</em> 即可获取,还可以使用 get_text 方法，不同的地方在于前者返回的一个 NavigableString 对象，后者返回的是 unicode 类型的字符串。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">soup.p.string</span><br></pre></td></tr></table></figure>
+<ul>
+<li>BeautifulSoup</li>
+</ul>
+<blockquote>
+<p><code>BeautifulSoup</code> 对象表示的是一个文档的全部内容.大部分时候,可以把它当作 <code>Tag</code> 对象，是一个特殊的 Tag.</p>
+</blockquote>
+<ul>
+<li>comment</li>
+</ul>
+<blockquote>
+<p><code>Comment</code> 对象是一个特殊类型的 <code>NavigableString</code> 对象，其实输出的内容仍然不包括注释符号,l例如：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">print soup.a</span><br><span class="line">print soup.a.string</span><br><span class="line">print type(soup.a.string)</span><br><span class="line"># 运行结果如下：</span><br><span class="line">&lt;a class=&quot;sister&quot; href=&quot;http://example.com/elsie&quot; id=&quot;link1&quot;&gt;&lt;!-- Elsie --&gt;&lt;/a&gt;</span><br><span class="line"> Elsie </span><br><span class="line">&lt;class &apos;bs4.element.Comment&apos;&gt;</span><br></pre></td></tr></table></figure>
+<p>a 标签里的内容实际上是注释，但是如果我们利用 .string 来输出它的内容，我们发现它已经把注释符号去掉了，所以这可能会给我们带来不必要的麻烦。另外我们打印输出下它的类型，发现它是一个 Comment 类型，所以，我们在使用前最好做一下判断，判断代码如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">if type(soup.a.string)==bs4.element.Comment:</span><br><span class="line">    print soup.a.string</span><br></pre></td></tr></table></figure>
+<h3 id="遍历文档树"><a href="#遍历文档树" class="headerlink" title="遍历文档树"></a>遍历文档树</h3><blockquote>
+<p>遍历文档树，顾名思义，就是是从根节点 html 标签开始遍历，直到找到目标元素为止，遍历的一个缺陷是，如果你要找的内容在文档的末尾，那么它要遍历整个文档才能找到它，速度上就慢了。通过遍历文档树的方式获取标签节点可以直接通过 <code>.标签名</code>的方式获取，例如：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> soup.body  # 获取 body 标签</span><br><span class="line">&lt;body&gt;\n&lt;h1&gt;BeautifulSoup&lt;/h1&gt;\n&lt;p class=&quot;bold&quot;&gt;\u5982\u4f55\u4f7f\u7528BeautifulSoup&lt;/p&gt;\n&lt;/body&gt;</span><br><span class="line"> soup.body.p # 获取 p 标签</span><br><span class="line"> &lt;p class=&quot;bold&quot;&gt;\u5982\u4f55\u4f7f\u7528BeautifulSoup&lt;/p&gt;</span><br><span class="line"> soup.body.p.string #获取 p 标签的内容如果有两个相邻的 p 标签时，第二个标签就没法通过 .p 的方式获取，这是需要借用 next_sibling 属性获取相邻的节点。</span><br><span class="line">\u5982\u4f55\u4f7f\u7528BeautifulSoup</span><br></pre></td></tr></table></figure>
+<h3 id="搜素文档树"><a href="#搜素文档树" class="headerlink" title="搜素文档树"></a>搜素文档树</h3><blockquote>
+<p>搜索文档树是通过指定标签名来搜索元素，还可以通过指定标签的属性值来精确定位某个节点元素，最常用的两个方法就是 find 和 find_all。这两个方法在 BeatifulSoup 和 Tag 对象上都可以被调用。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> find_all( name , attrs , recursive , text , kwargs ) </span><br><span class="line"># 第一个参数 name 是标签节点的名字,例如找到所有标签名为title的节点</span><br><span class="line">soup.find_all(&quot;title&quot;)</span><br><span class="line">第二个参数是标签的class属性值，找到所有class属性为big的p标签</span><br><span class="line">soup.find_all(&quot;p&quot;, &quot;big&quot;)</span><br><span class="line"># find 方法跟 find_all  类似，唯一不同的地方是，它返回的单个 Tag 对象而非列表，如果没找到匹配的节点则返回 None。如果匹配多个 Tag，只返回第0个。</span><br></pre></td></tr></table></figure>
+<p>补充知识：</p>
+<ol>
+<li>tag 的 .content 属性可以将tag的子节点以列表的方式输出,输出方式为列表，我们可以用列表索引来获取它的某一个元素.例如：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print soup.head.contents </span><br><span class="line">print soup.head.contents[0]</span><br></pre></td></tr></table></figure>
+<h3 id="原文链接："><a href="#原文链接：" class="headerlink" title="原文链接："></a>原文链接：</h3><p><a href="http://cuiqingcai.com/1319.html" target="_blank" rel="external">静觅》》Python爬虫利器二之Beautiful Soup的用法</a>]</p>
+<p><a href="http://www.10tiao.com/html/761/201704/2650366919/1.html" target="_blank" rel="external">HTML文本解析库BeautifulSoup</a></p>
+<p>​                  </p>
 </span>
       
     </div>
@@ -231,7 +300,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/生活/" rel="tag">#生活</a>
+            <a href="/tags/python爬虫/" rel="tag">#python爬虫</a>
           
         </div>
       
@@ -240,13 +309,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/05/09/一次简单的爬虫尝试/" rel="next" title="一次简单的爬虫尝试">
+                <i class="fa fa-chevron-left"></i> 一次简单的爬虫尝试
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/04/10/庐山游记/" rel="prev" title="庐山游记">
-                庐山游记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -353,7 +422,7 @@
           <div class="post-toc">
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#BeautifulSoup简介"><span class="nav-number">1.</span> <span class="nav-text">BeautifulSoup简介</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#BeautifulSoup安装"><span class="nav-number">1.1.</span> <span class="nav-text">BeautifulSoup安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建-Beautiful-Soup-对象"><span class="nav-number">1.2.</span> <span class="nav-text">创建 Beautiful Soup 对象</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四大对象种类"><span class="nav-number">2.</span> <span class="nav-text">四大对象种类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#遍历文档树"><span class="nav-number">3.</span> <span class="nav-text">遍历文档树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搜素文档树"><span class="nav-number">4.</span> <span class="nav-text">搜素文档树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#原文链接："><span class="nav-number">5.</span> <span class="nav-text">原文链接：</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
