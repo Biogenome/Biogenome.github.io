@@ -32,7 +32,7 @@
 
 
 
-  <meta name="keywords" content="技术," />
+  <meta name="keywords" content="统计学," />
 
 
 
@@ -41,19 +41,25 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
 
 
-<meta name="description" content="conda的环境管理
-Conda的环境管理功能允许我们同时安装若干不同版本的Python，并能自由切换。假设我们采用的是Python3.6对应的安装包，那么Python3.6就是默认的环境,假设我们需要安装Python3.4，此时，打开Anacon daprompt命令行工具， 我们需要做的操作如下:">
+<meta name="description" content="方差分析
+方差分析（analysis of variation,简写为ANOVA）又称变异数分析或F检验,其目的是推断两组或多组数据的总体均值是否相同，检验两个或多个样本均值的差异是否有统计学意义。
+
+基本思路将试验数据的总变异分解为来源于不同因素的相应变异，并作出数量估计，从而明确各个变异因素在总变异中所占的重要程度；也就是将试验数据的总变异方差分解成各变因方差，并以其中的误差方差作为和其他变因">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第4天-学习python">
-<meta property="og:url" content="http://www.biogenome.github.io/2017/04/17/第4天-学习python/index.html">
+<meta property="og:title" content="常见的统计学分析">
+<meta property="og:url" content="http://www.biogenome.github.io/2017/05/10/常见的统计学分析/index.html">
 <meta property="og:site_name" content="在水一方">
-<meta property="og:description" content="conda的环境管理
-Conda的环境管理功能允许我们同时安装若干不同版本的Python，并能自由切换。假设我们采用的是Python3.6对应的安装包，那么Python3.6就是默认的环境,假设我们需要安装Python3.4，此时，打开Anacon daprompt命令行工具， 我们需要做的操作如下:">
-<meta property="og:updated_time" content="2017-04-17T05:01:45.926Z">
+<meta property="og:description" content="方差分析
+方差分析（analysis of variation,简写为ANOVA）又称变异数分析或F检验,其目的是推断两组或多组数据的总体均值是否相同，检验两个或多个样本均值的差异是否有统计学意义。
+
+基本思路将试验数据的总变异分解为来源于不同因素的相应变异，并作出数量估计，从而明确各个变异因素在总变异中所占的重要程度；也就是将试验数据的总变异方差分解成各变因方差，并以其中的误差方差作为和其他变因">
+<meta property="og:updated_time" content="2017-05-10T13:03:02.005Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第4天-学习python">
-<meta name="twitter:description" content="conda的环境管理
-Conda的环境管理功能允许我们同时安装若干不同版本的Python，并能自由切换。假设我们采用的是Python3.6对应的安装包，那么Python3.6就是默认的环境,假设我们需要安装Python3.4，此时，打开Anacon daprompt命令行工具， 我们需要做的操作如下:">
+<meta name="twitter:title" content="常见的统计学分析">
+<meta name="twitter:description" content="方差分析
+方差分析（analysis of variation,简写为ANOVA）又称变异数分析或F检验,其目的是推断两组或多组数据的总体均值是否相同，检验两个或多个样本均值的差异是否有统计学意义。
+
+基本思路将试验数据的总变异分解为来源于不同因素的相应变异，并作出数量估计，从而明确各个变异因素在总变异中所占的重要程度；也就是将试验数据的总变异方差分解成各变因方差，并以其中的误差方差作为和其他变因">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -65,7 +71,7 @@ Conda的环境管理功能允许我们同时安装若干不同版本的Python，
 
 
 
-  <title> 第4天-学习python | 在水一方 </title>
+  <title> 常见的统计学分析 | 在水一方 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -190,7 +196,7 @@ Conda的环境管理功能允许我们同时安装若干不同版本的Python，
             
             
               
-                第4天-学习python
+                常见的统计学分析
               
             
           </h1>
@@ -199,8 +205,8 @@ Conda的环境管理功能允许我们同时安装若干不同版本的Python，
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2017-04-17T09:11:10+08:00" content="2017-04-17">
-              2017-04-17
+            <time itemprop="dateCreated" datetime="2017-05-10T18:55:03+08:00" content="2017-05-10">
+              2017-05-10
             </time>
           </span>
 
@@ -238,83 +244,19 @@ Conda的环境管理功能允许我们同时安装若干不同版本的Python，
       
 
       
-        <span itemprop="articleBody"><h3 id="conda的环境管理"><a href="#conda的环境管理" class="headerlink" title="conda的环境管理"></a>conda的环境管理</h3><blockquote>
-<p>Conda的环境管理功能允许我们同时安装若干不同版本的Python，并能自由切换。假设我们采用的是Python3.6对应的安装包，那么Python3.6就是默认的环境,假设我们需要安装Python3.4，此时，打开Anacon daprompt命令行工具， 我们需要做的操作如下:</p>
+        <span itemprop="articleBody"><h3 id="方差分析"><a href="#方差分析" class="headerlink" title="方差分析"></a>方差分析</h3><blockquote>
+<p>方差分析（analysis of variation,简写为ANOVA）又称变异数分析或F检验,其目的是推断两组或多组数据的总体均值是否相同，检验两个或多个样本均值的差异是否有统计学意义。</p>
 </blockquote>
-<a id="more"></a>
+<h4 id="基本思路"><a href="#基本思路" class="headerlink" title="基本思路"></a>基本思路</h4><p>将试验数据的总变异分解为来源于不同因素的相应变异，并作出数量估计，从而明确各个变异因素在总变异中所占的重要程度；也就是将试验数据的总变异方差分解成各变因方差，并以其中的<strong>误差方差</strong>作为和其他变因方差比较的标准，以推断其它变因所引起的变异量是否真实的一种统计分析方法。</p>
 <ul>
-<li>创建一个名为python27的环境，指定Python版本是2.7（不用管是2.7.x，conda会为我们自动寻找2.7.x中的最新版本）</li>
+<li>因素   ：对试验结果发生影响和起作用的自变量，即我们所要检验的对象</li>
+<li>单因素方差分析：方差分析研究的是一个因素对于试验结果的影响和作用</li>
+<li>双因素方差分析：研究两个因素的不同水平对试验结果的影响是否显著</li>
+<li>水平或处理：因素的不同选择方案，因素的水平实际上就是因素的取值或者是因素的分组</li>
+<li>随机误差：样本数据之间差异如果是由于抽样的随机性造成的</li>
+<li>系统误差：是由于因素水平本身不同引起的差异</li>
 </ul>
-<blockquote>
-<p>‘conda create –name python27 python=2.7’</p>
-</blockquote>
-<ul>
-<li>安装好后，使用activate激活某个环境</li>
-</ul>
-<blockquote>
-<p>activate python27 # for Windows<br>source activate python34 # for Linux &amp; Mac</p>
-</blockquote>
-<ul>
-<li>之后在Anaconda文件envs下就会生成新的环境变量文件，再用命令查看此时环境变量，当前所用环境变量前面一般有*标记</li>
-</ul>
-<blockquote>
-<p>conda info -e</p>
-</blockquote>
-<ul>
-<li>如果想返回默认的python 2.7环境，运行</li>
-</ul>
-<blockquote>
-<p>deactivate python27 # for Windows<br>source deactivate python27 # for Linux &amp; Mac</p>
-</blockquote>
-<ul>
-<li>删除一个已有的环境</li>
-</ul>
-<blockquote>
-<p>conda remove –name python27 –all</p>
-</blockquote>
-<h3 id="conda包的管理"><a href="#conda包的管理" class="headerlink" title="conda包的管理"></a>conda包的管理</h3><ul>
-<li>查看已经安装的packages，最新版的conda是从site-packages文件夹中搜索已经安装的包，不依赖于pip，可以显示出通过各种方式安装的包</li>
-</ul>
-<blockquote>
-<p>conda list</p>
-</blockquote>
-<ul>
-<li>例如我们要安装beautifulsoup4这个包，先用命令查找和查看该包是否可用</li>
-</ul>
-<blockquote>
-<p>conda search beautifulsoup4</p>
-</blockquote>
-<ul>
-<li>如果可用，继续进行包的安装，用namepython27指定安装包的环境，如果不指定，默认安转到当前环境中，所以在安装包之前要明白当前环境</li>
-</ul>
-<blockquote>
-<p>conda install beautifulsoup4</p>
-</blockquote>
-<h4 id="从Anaconda-org安装一个包"><a href="#从Anaconda-org安装一个包" class="headerlink" title="从Anaconda.org安装一个包"></a>从Anaconda.org安装一个包</h4><blockquote>
-<p>如果一个包不能使用conda安装，我们接下来将在Anaconda.org网站查找。所以在左上角的叫“Search Anaconda Cloud”搜索框中输入“bottleneck”并点击search按钮。Anaconda.org上会有超过一打的bottleneck包的版本可用，但是我们想要那个被下载最频繁的版本。所以你可以通过下载量来排序，通过点击Download栏。点击包的名字来选择最常被下载的包。它会链接到Anaconda.org详情页显示下载的具体命令：</p>
-<p>conda install -c rahuljain bottleneck=1.0.0</p>
-</blockquote>
-<h4 id="通过pip命令来安装包"><a href="#通过pip命令来安装包" class="headerlink" title="通过pip命令来安装包"></a>通过pip命令来安装包</h4><blockquote>
-<p>对于那些无法通过conda安装或者从Anaconda.org获得的包，我们通常可以用pip来安装包。pip只是一个包管理器，所以它不能为你管理环境。pip甚至不能升级python，因为它不像conda一样把python当做包来处理。pip和conda都集成在Anaconda或miniconda里边。例如，通过pip安装一个叫“See”的程序</p>
-<p>pip install see</p>
-</blockquote>
-<h4 id="删除所安装的包"><a href="#删除所安装的包" class="headerlink" title="删除所安装的包"></a>删除所安装的包</h4><blockquote>
-<p>conda remove beautifulsoup4</p>
-</blockquote>
-<h4 id="设置国内镜像"><a href="#设置国内镜像" class="headerlink" title="设置国内镜像"></a>设置国内镜像</h4><blockquote>
-<p>如果需要安装很多packages，你会发现conda下载的速度经常很慢，因为Anaconda.org的服务器在国外。所幸的是，清华TUNA镜像源有Anaconda仓库的镜像，我们将其加入conda的配置即可：</p>
-</blockquote>
-<h4 id="添加Anaconda的TUNA镜像"><a href="#添加Anaconda的TUNA镜像" class="headerlink" title="添加Anaconda的TUNA镜像"></a>添加Anaconda的TUNA镜像</h4><blockquote>
-<p>conda config –add channels &gt; <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/" target="_blank" rel="external">https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</a></p>
-</blockquote>
-<h4 id="设置搜索时显示通道地址"><a href="#设置搜索时显示通道地址" class="headerlink" title="设置搜索时显示通道地址"></a>设置搜索时显示通道地址</h4><blockquote>
-<p>conda config –set show_channel_urls yes</p>
-</blockquote>
-<h3 id="参考文献及扩展阅读"><a href="#参考文献及扩展阅读" class="headerlink" title="参考文献及扩展阅读"></a>参考文献及扩展阅读</h3><ul>
-<li><a href="http://www.jianshu.com/p/2f3be7781451" target="_blank" rel="external">Anaconda使用总结</a></li>
-<li><a href="http://wrran.com/blog/2016/11/22/howto-conda/" target="_blank" rel="external">conda使用教程</a></li>
-<li><a href="https://conda.io/docs/test-drive.html" target="_blank" rel="external">conda官方文档说明</a></li>
-</ul>
+<h4 id="基本前提"><a href="#基本前提" class="headerlink" title="基本前提"></a>基本前提</h4><p>各组的观察数据，要能够被看作是从服从正态分布的总体中随机抽得的样本。各组的观察数据，是从具有相同方差的总体中抽取得到的。观察值是相互独立的。</p>
 </span>
       
     </div>
@@ -323,7 +265,7 @@ Conda的环境管理功能允许我们同时安装若干不同版本的Python，
       
         <div class="post-tags">
           
-            <a href="/tags/技术/" rel="tag">#技术</a>
+            <a href="/tags/统计学/" rel="tag">#统计学</a>
           
         </div>
       
@@ -332,16 +274,16 @@ Conda的环境管理功能允许我们同时安装若干不同版本的Python，
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/16/第3天-学习python/" rel="next" title="第3天-学习python">
-                <i class="fa fa-chevron-left"></i> 第3天-学习python
+              <a href="/2017/05/09/爬虫利器a-BeautifulSoup的使用/" rel="next" title="爬虫利器å-BeautifulSoup的使用">
+                <i class="fa fa-chevron-left"></i> 爬虫利器å-BeautifulSoup的使用
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/04/17/第5天-学习python/" rel="prev" title="第5天-学习python">
-                第5天-学习python <i class="fa fa-chevron-right"></i>
+              <a href="/2017/05/12/第11天学-学习python之html/" rel="prev" title="第11天学-学习python之html">
+                第11天学-学习python之html <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -449,7 +391,7 @@ Conda的环境管理功能允许我们同时安装若干不同版本的Python，
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#conda的环境管理"><span class="nav-number">1.</span> <span class="nav-text">conda的环境管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#conda包的管理"><span class="nav-number">2.</span> <span class="nav-text">conda包的管理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#从Anaconda-org安装一个包"><span class="nav-number">2.1.</span> <span class="nav-text">从Anaconda.org安装一个包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#通过pip命令来安装包"><span class="nav-number">2.2.</span> <span class="nav-text">通过pip命令来安装包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除所安装的包"><span class="nav-number">2.3.</span> <span class="nav-text">删除所安装的包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置国内镜像"><span class="nav-number">2.4.</span> <span class="nav-text">设置国内镜像</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加Anaconda的TUNA镜像"><span class="nav-number">2.5.</span> <span class="nav-text">添加Anaconda的TUNA镜像</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置搜索时显示通道地址"><span class="nav-number">2.6.</span> <span class="nav-text">设置搜索时显示通道地址</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考文献及扩展阅读"><span class="nav-number">3.</span> <span class="nav-text">参考文献及扩展阅读</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#方差分析"><span class="nav-number">1.</span> <span class="nav-text">方差分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本思路"><span class="nav-number">1.1.</span> <span class="nav-text">基本思路</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基本前提"><span class="nav-number">1.2.</span> <span class="nav-text">基本前提</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
