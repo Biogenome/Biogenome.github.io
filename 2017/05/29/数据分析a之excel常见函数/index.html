@@ -32,7 +32,7 @@
 
 
 
-  <meta name="keywords" content="技术," />
+  <meta name="keywords" content="大数据," />
 
 
 
@@ -41,25 +41,16 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
 
 
-<meta name="description" content="模块为了编写可维护的代码，我们把很多函数分组，分别放到不同的文件里，这样，每个文件包含的代码就相对较少，很多编程语言都采用这种组织代码的方式。在Python中，一个.py文件就称之为一个模块（Module）.Python的模块其实就是封装了一个或者多个功能的代码集合，以便于重用，模块可以是一个文件也可以是一个目录，目录的形式称作包。使用模块的好处：
-
-大大提高了代码的可维护性。
-编写代码不必从零开">
+<meta name="description" content="本文是《如何快速成为数据分析师》的第一篇教程，如果想要了解写作初衷，可以先行阅读七周指南。温馨提示：如果您已经熟悉Excel，大可不必再看这篇文章，或只挑选部分。每一个数据新人的入门工具都离不开Excel。因为Excel涵盖的功能足够多。Excel有很多强大的函数，这篇文章主要介绍各种函数的用途。实战会后续文章讲解。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第10天-学习python">
-<meta property="og:url" content="http://www.biogenome.github.io/2017/04/22/第10天-学习python/index.html">
+<meta property="og:title" content="数据分析å之excel常见函数">
+<meta property="og:url" content="http://www.biogenome.github.io/2017/05/29/数据分析a之excel常见函数/index.html">
 <meta property="og:site_name" content="在水一方">
-<meta property="og:description" content="模块为了编写可维护的代码，我们把很多函数分组，分别放到不同的文件里，这样，每个文件包含的代码就相对较少，很多编程语言都采用这种组织代码的方式。在Python中，一个.py文件就称之为一个模块（Module）.Python的模块其实就是封装了一个或者多个功能的代码集合，以便于重用，模块可以是一个文件也可以是一个目录，目录的形式称作包。使用模块的好处：
-
-大大提高了代码的可维护性。
-编写代码不必从零开">
-<meta property="og:updated_time" content="2017-04-22T10:53:45.505Z">
+<meta property="og:description" content="本文是《如何快速成为数据分析师》的第一篇教程，如果想要了解写作初衷，可以先行阅读七周指南。温馨提示：如果您已经熟悉Excel，大可不必再看这篇文章，或只挑选部分。每一个数据新人的入门工具都离不开Excel。因为Excel涵盖的功能足够多。Excel有很多强大的函数，这篇文章主要介绍各种函数的用途。实战会后续文章讲解。">
+<meta property="og:updated_time" content="2017-05-29T14:01:00.595Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第10天-学习python">
-<meta name="twitter:description" content="模块为了编写可维护的代码，我们把很多函数分组，分别放到不同的文件里，这样，每个文件包含的代码就相对较少，很多编程语言都采用这种组织代码的方式。在Python中，一个.py文件就称之为一个模块（Module）.Python的模块其实就是封装了一个或者多个功能的代码集合，以便于重用，模块可以是一个文件也可以是一个目录，目录的形式称作包。使用模块的好处：
-
-大大提高了代码的可维护性。
-编写代码不必从零开">
+<meta name="twitter:title" content="数据分析å之excel常见函数">
+<meta name="twitter:description" content="本文是《如何快速成为数据分析师》的第一篇教程，如果想要了解写作初衷，可以先行阅读七周指南。温馨提示：如果您已经熟悉Excel，大可不必再看这篇文章，或只挑选部分。每一个数据新人的入门工具都离不开Excel。因为Excel涵盖的功能足够多。Excel有很多强大的函数，这篇文章主要介绍各种函数的用途。实战会后续文章讲解。">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -71,7 +62,7 @@
 
 
 
-  <title> 第10天-学习python | 在水一方 </title>
+  <title> 数据分析å之excel常见函数 | 在水一方 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -196,7 +187,7 @@
             
             
               
-                第10天-学习python
+                数据分析å之excel常见函数
               
             
           </h1>
@@ -205,8 +196,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2017-04-22T10:39:10+08:00" content="2017-04-22">
-              2017-04-22
+            <time itemprop="dateCreated" datetime="2017-05-29T21:49:36+08:00" content="2017-05-29">
+              2017-05-29
             </time>
           </span>
 
@@ -215,8 +206,8 @@
               &nbsp; | &nbsp; 分类于
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
+                  <a href="/categories/数据分析/" itemprop="url" rel="index">
+                    <span itemprop="name">数据分析</span>
                   </a>
                 </span>
 
@@ -244,14 +235,33 @@
       
 
       
-        <span itemprop="articleBody"><h3 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h3><p>为了编写可维护的代码，我们把很多函数分组，分别放到不同的文件里，这样，每个文件包含的代码就相对较少，很多编程语言都采用这种组织代码的方式。在Python中，一个.py文件就称之为一个<strong>模块（Module）</strong>.Python的模块其实就是封装了一个或者多个功能的代码集合，以便于重用，模块可以是一个<code>文件</code>也可以是一个<code>目录</code>，目录的形式称作<code>包</code>。使用模块的好处：</p>
-<ul>
-<li>大大提高了代码的可维护性。</li>
-<li>编写代码不必从零开始。</li>
-<li>使用模块还可以避免函数名和变量名冲突。</li>
-<li>模块名字与其他模块冲突了，于是我们可以通过包来组织模块，避免冲突，自己创建模块时要注意命名，不能和Python自带的模块名称冲突。</li>
-</ul>
-<h4 id="内置模块"><a href="#内置模块" class="headerlink" title="内置模块"></a>内置模块</h4><p>内置模块可以理解成当你安装好python环境之后，直接可以使用<code>import</code>导入的就是内置模块</p>
+        <span itemprop="articleBody"><blockquote>
+<p>本文是<a href="https://www.zhihu.com/question/29265587/answer/125091104" target="_blank" rel="external">《如何快速成为数据分析师》</a>的第一篇教程，如果想要了解写作初衷，可以先行阅读七周指南。温馨提示：如果您已经熟悉Excel，大可不必再看这篇文章，或只挑选部分。每一个数据新人的入门工具都离不开Excel。因为Excel涵盖的功能足够多。Excel有很多强大的函数，这篇文章主要介绍各种函数的用途。实战会后续文章讲解。</p>
+</blockquote>
+<a id="more"></a>
+<h3 id="清洗处理类"><a href="#清洗处理类" class="headerlink" title="清洗处理类"></a><strong>清洗处理类</strong></h3><p>主要是文本、格式以及脏数据的清洗和转换。很多数据并不是直接拿来就能用的，需要经过数据分析人员的清理。数据越多，这个步骤花费的时间越长。</p>
+<p><strong>Trim</strong></p>
+<p>清除掉字符串两边的空格。MySQL有同名函数，Python有近似函数strip。</p>
+<p><strong>Concatenate</strong></p>
+<p>合并单元格中的内容，还有另一种合并方式是&amp; 。”我”&amp;”很”&amp;”帅” ＝ 我很帅。当需要合并的内容过多时，concatenate的效率快也优雅。MySQL有近似函数concat。</p>
+<p><strong>Replace</strong></p>
+<p>替换掉单元格的字符串，清洗使用较多。<em>MySQL中有同名函数，Python中有同名函数。</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">=Replace（指定字符串，哪个位置开始替换，替换几个字符，替换成什么）</span><br></pre></td></tr></table></figure>
+<p><strong>Substitute</strong></p>
+<p>和replace接近，区别是替换为全局替换，没有起始位置的概念</p>
+<p><strong>Left／Right／Mid</strong></p>
+<p>截取字符串中的字符。Left/Right（指定字符串，截取长度）。left为从左，right为从右，mid如下文示意。<em>MySQL中有同名函数。</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">=Mid(指定字符串，开始位置，截取长度)</span><br></pre></td></tr></table></figure>
+<p><strong>Len／Lenb</strong></p>
+<p>返回字符串的长度，在len中，中文计算为一个，在lenb中，中文计算为两个。<em>MySQL中有同名函数，Python中有同名函数。</em></p>
+<p><strong>Find</strong></p>
+<p>查找某字符串出现的位置，可以指定为第几次出现，与Left／Right／Mid结合能完成简单的文本提取<em>MySQL中有近似函数 find_in_set，Python中有同名函数。</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">=Find（要查找字符，指定字符串，第几个字符）</span><br></pre></td></tr></table></figure>
+<p><strong>Search</strong></p>
+<p>和Find类似，区别是Search大小写不敏感，但支持＊通配符</p>
+<p><strong>Text</strong></p>
+<p>将数值转化为指定的文本格式，可以和时间序列函数一起看</p>
+<h3 id="原文链接"><a href="#原文链接" class="headerlink" title="原文链接"></a>原文链接</h3><p><a href="https://zhuanlan.zhihu.com/p/23345231" target="_blank" rel="external">七周成为数据分析师—Excel函数篇</a></p>
 </span>
       
     </div>
@@ -260,7 +270,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/技术/" rel="tag">#技术</a>
+            <a href="/tags/大数据/" rel="tag">#大数据</a>
           
         </div>
       
@@ -269,17 +279,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/21/git学习/" rel="next" title="git学习">
-                <i class="fa fa-chevron-left"></i> git学习
+              <a href="/2017/05/29/回乡记/" rel="next" title="故乡，回不去的过去">
+                <i class="fa fa-chevron-left"></i> 故乡，回不去的过去
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/05/07/金陵一梦-南京游记/" rel="prev" title="金陵一梦-南京游记">
-                金陵一梦-南京游记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -386,7 +392,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#模块"><span class="nav-number">1.</span> <span class="nav-text">模块</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#内置模块"><span class="nav-number">1.1.</span> <span class="nav-text">内置模块</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#清洗处理类"><span class="nav-number">1.</span> <span class="nav-text">清洗处理类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#原文链接"><span class="nav-number">2.</span> <span class="nav-text">原文链接</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
