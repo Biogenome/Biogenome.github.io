@@ -32,7 +32,7 @@
 
 
 
-  <meta name="keywords" content="技术," />
+  <meta name="keywords" content="大数据," />
 
 
 
@@ -41,21 +41,19 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
 
 
-<meta name="description" content="引言
-Anaconda是一个开源的数据科学平台，包含了100多种常用的Python数据科学包，默认集成了Notebook,也是非常好的一个包管理工具。完美的兼容python2.7和python3.5，免去配置环境变量的烦恼。Jupyter Notebook是一个运行在浏览器里面的web应用，可以非常方便的编辑、运行Python代码；添加文档（支持MarkDown）；演示运行结果等；还可以很方便的导">
+<meta name="description" content="关联匹配类
+在进行多表关联或者行列比对时用到的函数，越复杂的表用得越多。多说一句，良好的表习惯可以减少这类函数的使用。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第3天-学习python">
-<meta property="og:url" content="http://www.biogenome.github.io/2017/04/16/第3天-学习python/index.html">
+<meta property="og:title" content="excel常见函数之关联匹配">
+<meta property="og:url" content="http://www.biogenome.github.io/2017/05/31/excel常见函数之关联匹配/index.html">
 <meta property="og:site_name" content="在水一方">
-<meta property="og:description" content="引言
-Anaconda是一个开源的数据科学平台，包含了100多种常用的Python数据科学包，默认集成了Notebook,也是非常好的一个包管理工具。完美的兼容python2.7和python3.5，免去配置环境变量的烦恼。Jupyter Notebook是一个运行在浏览器里面的web应用，可以非常方便的编辑、运行Python代码；添加文档（支持MarkDown）；演示运行结果等；还可以很方便的导">
-<meta property="og:image" content="http://www.biogenome.github.io/file:///C:/Users/yangjinlong/Desktop/1.png?lastModify=1492319717">
-<meta property="og:updated_time" content="2017-04-16T12:28:49.511Z">
+<meta property="og:description" content="关联匹配类
+在进行多表关联或者行列比对时用到的函数，越复杂的表用得越多。多说一句，良好的表习惯可以减少这类函数的使用。">
+<meta property="og:updated_time" content="2017-05-31T07:20:25.186Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第3天-学习python">
-<meta name="twitter:description" content="引言
-Anaconda是一个开源的数据科学平台，包含了100多种常用的Python数据科学包，默认集成了Notebook,也是非常好的一个包管理工具。完美的兼容python2.7和python3.5，免去配置环境变量的烦恼。Jupyter Notebook是一个运行在浏览器里面的web应用，可以非常方便的编辑、运行Python代码；添加文档（支持MarkDown）；演示运行结果等；还可以很方便的导">
-<meta name="twitter:image" content="http://www.biogenome.github.io/file:///C:/Users/yangjinlong/Desktop/1.png?lastModify=1492319717">
+<meta name="twitter:title" content="excel常见函数之关联匹配">
+<meta name="twitter:description" content="关联匹配类
+在进行多表关联或者行列比对时用到的函数，越复杂的表用得越多。多说一句，良好的表习惯可以减少这类函数的使用。">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -67,7 +65,7 @@ Anaconda是一个开源的数据科学平台，包含了100多种常用的Python
 
 
 
-  <title> 第3天-学习python | 在水一方 </title>
+  <title> excel常见函数之关联匹配 | 在水一方 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -192,7 +190,7 @@ Anaconda是一个开源的数据科学平台，包含了100多种常用的Python
             
             
               
-                第3天-学习python
+                excel常见函数之关联匹配
               
             
           </h1>
@@ -201,8 +199,8 @@ Anaconda是一个开源的数据科学平台，包含了100多种常用的Python
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2017-04-16T12:45:34+08:00" content="2017-04-16">
-              2017-04-16
+            <time itemprop="dateCreated" datetime="2017-05-31T11:31:16+08:00" content="2017-05-31">
+              2017-05-31
             </time>
           </span>
 
@@ -211,8 +209,8 @@ Anaconda是一个开源的数据科学平台，包含了100多种常用的Python
               &nbsp; | &nbsp; 分类于
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
+                  <a href="/categories/数据分析/" itemprop="url" rel="index">
+                    <span itemprop="name">数据分析</span>
                   </a>
                 </span>
 
@@ -240,34 +238,41 @@ Anaconda是一个开源的数据科学平台，包含了100多种常用的Python
       
 
       
-        <span itemprop="articleBody"><h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><blockquote>
-<p>Anaconda是一个开源的数据科学平台，包含了100多种常用的Python数据科学包，默认集成了Notebook,也是非常好的一个包管理工具。完美的兼容python2.7和python3.5，免去配置环境变量的烦恼。Jupyter Notebook是一个运行在浏览器里面的web应用，可以非常方便的编辑、运行Python代码；添加文档（支持MarkDown）；演示运行结果等；还可以很方便的导出文件。完全可以取代在shell中写Python。Anaconda利用工具/命令<code>conda</code>来进行package和environment的管理，并且已经包含了Python和相关的配套工具</p>
+        <span itemprop="articleBody"><h3 id="关联匹配类"><a href="#关联匹配类" class="headerlink" title="关联匹配类"></a>关联匹配类</h3><blockquote>
+<p>在进行多表关联或者行列比对时用到的函数，越复杂的表用得越多。多说一句，良好的表习惯可以减少这类函数的使用。</p>
 </blockquote>
 <a id="more"></a>
-<ul>
-<li><code>conda</code>可以理解为一个工具，也是一个可执行命令，其核心功能是<strong>包管理</strong>与<strong>环境管理</strong>。包管理与pip的使用类似，环境管理则允许用户方便地安装不同版本的python并可以快速切换。Anaconda则是一个打包的集合，里面预装好了conda、某个版本的python、众多packages、科学计算工具等等，所以也称为Python的一种发行版。</li>
-</ul>
-<h4 id="Anaconda下载"><a href="#Anaconda下载" class="headerlink" title="Anaconda下载"></a>Anaconda下载</h4><ul>
-<li><p>去官网下载Anaconda <a href="https://www.continuum.io/downloads" target="_blank" rel="external">下载地址</a>，选择对应的你的系统版本。如果官网速度较慢，可以到这儿下载<a href="https://mirrors.tuna.tsinghua.edu.cn/" target="_blank" rel="external">清华大学开源镜像中心</a></p>
-</li>
-<li><p>选择你的安装路径，然后耐心等待，等到安装完成。</p>
-</li>
-<li><p>win健+R（或者点开始菜单-运行-输入cmd-按回车）打开命令提示符，输入<code>conda --version</code>查看版本号，如果可以查看到版本号则证明安装成功。直接通过conda命令管理python包。</p>
-<p> <img src="file:///C:/Users/yangjinlong/Desktop/1.png?lastModify=1492319717" alt="img"></p>
-</li>
-<li><p>Anaconda安装成功之后，我们可以修改其包管理镜像为国内源，在cmd中运行两行命令即可。</p>
-</li>
-</ul>
-<h4 id="Jupyter-Notebook-安装及使用"><a href="#Jupyter-Notebook-安装及使用" class="headerlink" title="Jupyter Notebook 安装及使用"></a>Jupyter Notebook 安装及使用</h4><ul>
-<li>安装完Anaconda后，如果是老版本，用命令行启动Jupyter Notebook，如下。目前，最新版本的Anaconda是自带Jupyter NoteBook的，不需要再单独安装，在菜单栏打开conda文件，再打开Notebook,自动跳转到登陆接口。</li>
-</ul>
-<h4 id="参考文献及拓展阅读"><a href="#参考文献及拓展阅读" class="headerlink" title="参考文献及拓展阅读"></a>参考文献及拓展阅读</h4><ol>
-<li><a href="https://conda.io/docs/test-drive.html" target="_blank" rel="external">官方文档说明</a></li>
-<li><a href="http://www.jianshu.com/p/2f3be7781451" target="_blank" rel="external">Anaconda使用总结</a></li>
-<li><a href="http://www.afox.cc/archives/390" target="_blank" rel="external">Anaconda使用教程</a></li>
-<li><a href="http://blog.leanote.com/post/zhaoyu/Jupyter-Notebook-安装及使用" target="_blank" rel="external">Jupyter Notebook 安装及使用</a></li>
-<li>​</li>
-</ol>
+<p><strong>Lookup</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">=Lookup（查找的值，值所在的位置，返回相应位置的值）</span><br></pre></td></tr></table></figure>
+<p>最被忽略的函数，功能性和Vlookup一样，但是引申有数组匹配和二分法。</p>
+<p><strong>Vlookup</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">=Vlookup(查找的值，哪里找，找哪个位置的值，是否精准匹配)</span><br></pre></td></tr></table></figure>
+<p><strong>Index</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">＝Index（查找的区域，区域内第几行，区域内第几列）</span><br></pre></td></tr></table></figure>
+<p>和Match组合，媲美Vlookup，但是功能更强大。</p>
+<p><strong>Match</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">＝Match（查找指定的值，查找所在区域，查找方式的参数）</span><br></pre></td></tr></table></figure>
+<p>和Lookup类似，但是可以按照指定方式查找，比如大于、小于或等于。返回值所在的位置。</p>
+<p><strong>Row</strong></p>
+<p>返回单元格所在的行</p>
+<p><strong>Column</strong></p>
+<p>返回单元格所在的列</p>
+<p><strong>Offset</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">＝Offset（指定点，偏移多少行，偏移多少列，返回多少行，返回多少列）</span><br></pre></td></tr></table></figure>
+<p>建立坐标系，以坐标系为原点，返回距离原点的值或者区域。正数代表向下或向右，负数则相反。</p>
+<h3 id="逻辑运算类"><a href="#逻辑运算类" class="headerlink" title="逻辑运算类"></a><strong>逻辑运算类</strong></h3><blockquote>
+<p>数据分析中不得不用到逻辑运算，逻辑运算返回的均是布尔类型，True和False。很多复杂的数据分析会牵扯到较多的逻辑运算.</p>
+</blockquote>
+<p><strong>IF</strong></p>
+<p>经典的如果但是，在后期的Python中，也会经常用到，当然会有许多更优雅的写法。也有ifs用法，取代if(and())的写法。</p>
+<p><em>MySQL中有同名函数，Python中有同名函数。</em></p>
+<p><strong>And</strong></p>
+<p>全部参数为True，则返回True，经常用于多条件判断。<em>MySQL中有同名函数，Python中有同名函数。</em></p>
+<p><strong>Or</strong></p>
+<p>只要参数有一个True，则返回Ture，经常用于多条件判断。<em>MySQL中有同名函数，Python中有同名函数。</em></p>
+<p><strong>IS系列</strong></p>
+<p>常用判断检验，返回的都是布尔数值True和False。常用ISERR，ISERROR，ISNA，ISTEXT，可以和IF嵌套使用。</p>
+<h3 id="原文链接"><a href="#原文链接" class="headerlink" title="原文链接"></a>原文链接</h3><p><a href="https://zhuanlan.zhihu.com/p/23345231" target="_blank" rel="external">七周成为数据分析师—Excel函数篇</a></p>
 </span>
       
     </div>
@@ -276,7 +281,7 @@ Anaconda是一个开源的数据科学平台，包含了100多种常用的Python
       
         <div class="post-tags">
           
-            <a href="/tags/技术/" rel="tag">#技术</a>
+            <a href="/tags/大数据/" rel="tag">#大数据</a>
           
         </div>
       
@@ -285,16 +290,16 @@ Anaconda是一个开源的数据科学平台，包含了100多种常用的Python
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/15/第2天-学习python/" rel="next" title="第2天-学习python">
-                <i class="fa fa-chevron-left"></i> 第2天-学习python
+              <a href="/2017/05/29/数据分析a之excel常见函数/" rel="next" title="数据分析å之excel常见函数">
+                <i class="fa fa-chevron-left"></i> 数据分析å之excel常见函数
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/04/17/第4天-学习python/" rel="prev" title="第4天-学习python">
-                第4天-学习python <i class="fa fa-chevron-right"></i>
+              <a href="/2017/05/31/excel常见函数之计算统计类/" rel="prev" title="excel常见函数之计算统计类">
+                excel常见函数之计算统计类 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -402,7 +407,7 @@ Anaconda是一个开源的数据科学平台，包含了100多种常用的Python
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#引言"><span class="nav-number">1.</span> <span class="nav-text">引言</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Anaconda下载"><span class="nav-number">1.1.</span> <span class="nav-text">Anaconda下载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Jupyter-Notebook-安装及使用"><span class="nav-number">1.2.</span> <span class="nav-text">Jupyter Notebook 安装及使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#参考文献及拓展阅读"><span class="nav-number">1.3.</span> <span class="nav-text">参考文献及拓展阅读</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#关联匹配类"><span class="nav-number">1.</span> <span class="nav-text">关联匹配类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#逻辑运算类"><span class="nav-number">2.</span> <span class="nav-text">逻辑运算类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#原文链接"><span class="nav-number">3.</span> <span class="nav-text">原文链接</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
