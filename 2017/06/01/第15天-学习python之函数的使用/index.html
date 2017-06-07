@@ -32,7 +32,7 @@
 
 
 
-  <meta name="keywords" content="统计学," />
+  <meta name="keywords" content="python基础," />
 
 
 
@@ -41,25 +41,19 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
 
 
-<meta name="description" content="方差分析
-方差分析（analysis of variation,简写为ANOVA）又称变异数分析或F检验,其目的是推断两组或多组数据的总体均值是否相同，检验两个或多个样本均值的差异是否有统计学意义。
-
-基本思路将试验数据的总变异分解为来源于不同因素的相应变异，并作出数量估计，从而明确各个变异因素在总变异中所占的重要程度；也就是将试验数据的总变异方差分解成各变因方差，并以其中的误差方差作为和其他变因">
+<meta name="description" content="调用函数Python内置了很多有用的函数，我们可以直接调用。要调用一个函数，需要知道函数的名称和参数，可以直接从Python的官方网站查看文档：python内置函数官方文档，也可以在交互式命令行通过help(abs)查看abs函数的帮助信息。
+调用函数的时候，如果传入的参数数量不对或参数类型不能被函数所接受，会报TypeError的错误。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="常见的统计学分析">
-<meta property="og:url" content="http://www.biogenome.github.io/2017/05/10/常见的统计学分析/index.html">
+<meta property="og:title" content="第15天-学习python之函数的使用">
+<meta property="og:url" content="http://www.biogenome.github.io/2017/06/01/第15天-学习python之函数的使用/index.html">
 <meta property="og:site_name" content="在水一方">
-<meta property="og:description" content="方差分析
-方差分析（analysis of variation,简写为ANOVA）又称变异数分析或F检验,其目的是推断两组或多组数据的总体均值是否相同，检验两个或多个样本均值的差异是否有统计学意义。
-
-基本思路将试验数据的总变异分解为来源于不同因素的相应变异，并作出数量估计，从而明确各个变异因素在总变异中所占的重要程度；也就是将试验数据的总变异方差分解成各变因方差，并以其中的误差方差作为和其他变因">
-<meta property="og:updated_time" content="2017-05-10T13:03:02.005Z">
+<meta property="og:description" content="调用函数Python内置了很多有用的函数，我们可以直接调用。要调用一个函数，需要知道函数的名称和参数，可以直接从Python的官方网站查看文档：python内置函数官方文档，也可以在交互式命令行通过help(abs)查看abs函数的帮助信息。
+调用函数的时候，如果传入的参数数量不对或参数类型不能被函数所接受，会报TypeError的错误。">
+<meta property="og:updated_time" content="2017-06-06T12:50:39.453Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="常见的统计学分析">
-<meta name="twitter:description" content="方差分析
-方差分析（analysis of variation,简写为ANOVA）又称变异数分析或F检验,其目的是推断两组或多组数据的总体均值是否相同，检验两个或多个样本均值的差异是否有统计学意义。
-
-基本思路将试验数据的总变异分解为来源于不同因素的相应变异，并作出数量估计，从而明确各个变异因素在总变异中所占的重要程度；也就是将试验数据的总变异方差分解成各变因方差，并以其中的误差方差作为和其他变因">
+<meta name="twitter:title" content="第15天-学习python之函数的使用">
+<meta name="twitter:description" content="调用函数Python内置了很多有用的函数，我们可以直接调用。要调用一个函数，需要知道函数的名称和参数，可以直接从Python的官方网站查看文档：python内置函数官方文档，也可以在交互式命令行通过help(abs)查看abs函数的帮助信息。
+调用函数的时候，如果传入的参数数量不对或参数类型不能被函数所接受，会报TypeError的错误。">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -71,7 +65,7 @@
 
 
 
-  <title> 常见的统计学分析 | 在水一方 </title>
+  <title> 第15天-学习python之函数的使用 | 在水一方 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -196,7 +190,7 @@
             
             
               
-                常见的统计学分析
+                第15天-学习python之函数的使用
               
             
           </h1>
@@ -205,8 +199,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2017-05-10T18:55:03+08:00" content="2017-05-10">
-              2017-05-10
+            <time itemprop="dateCreated" datetime="2017-06-01T07:20:30+08:00" content="2017-06-01">
+              2017-06-01
             </time>
           </span>
 
@@ -244,19 +238,45 @@
       
 
       
-        <span itemprop="articleBody"><h3 id="方差分析"><a href="#方差分析" class="headerlink" title="方差分析"></a>方差分析</h3><blockquote>
-<p>方差分析（analysis of variation,简写为ANOVA）又称变异数分析或F检验,其目的是推断两组或多组数据的总体均值是否相同，检验两个或多个样本均值的差异是否有统计学意义。</p>
-</blockquote>
-<h4 id="基本思路"><a href="#基本思路" class="headerlink" title="基本思路"></a>基本思路</h4><p>将试验数据的总变异分解为来源于不同因素的相应变异，并作出数量估计，从而明确各个变异因素在总变异中所占的重要程度；也就是将试验数据的总变异方差分解成各变因方差，并以其中的<strong>误差方差</strong>作为和其他变因方差比较的标准，以推断其它变因所引起的变异量是否真实的一种统计分析方法。</p>
+        <span itemprop="articleBody"><h3 id="调用函数"><a href="#调用函数" class="headerlink" title="调用函数"></a>调用函数</h3><p>Python内置了很多有用的函数，我们可以直接调用。要调用一个函数，需要知道函数的名称和参数，可以直接从Python的官方网站查看文档：<a href="https://docs.python.org/3/library/functions.html" target="_blank" rel="external">python内置函数官方文档</a>，也可以在交互式命令行通过<code>help(abs)</code>查看<code>abs</code>函数的帮助信息。</p>
+<p>调用函数的时候，如果传入的参数数量不对或参数类型不能被函数所接受，会报<code>TypeError</code>的错误。</p>
+<a id="more"></a>
+<h3 id="定义函数"><a href="#定义函数" class="headerlink" title="定义函数"></a>定义函数</h3><p>在Python中，定义一个函数要使用<code>def</code>语句，依次写出函数名、括号、括号中的参数和冒号<code>:</code>，然后，在缩进块中编写函数体，函数的返回值用<code>return</code>语句返回。</p>
+<h3 id="空函数"><a href="#空函数" class="headerlink" title="空函数"></a>空函数</h3><p>如果想定义一个什么事也不做的空函数，可以用<code>pass</code>语句：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">def nop():</span><br><span class="line">    pass</span><br></pre></td></tr></table></figure>
+<p>实际上<code>pass</code>可以用来作为占位符，比如现在还没想好怎么写函数的代码，就可以先放一个<code>pass</code>，让代码能运行起来。</p>
+<h3 id="参数检查"><a href="#参数检查" class="headerlink" title="参数检查"></a>参数检查</h3><p>自定义的函数，不能自动检查传入参数的类型或参数是否有误，数据类型检查可以用内置函数<code>isinstance()</code>实现：</p>
+<h3 id="return和print的区别"><a href="#return和print的区别" class="headerlink" title="return和print的区别"></a><em>return和print的区别</em></h3><p><em>print：输出，或者翻译为打印，指输出方便人类来看的数值或文字，机器没有存储，也没法再次使用。如果机器想再次调用，则结果值为“none”。</em></p>
+<p><em>return：返回值，表面上看也是输出了人类可以看的数值或文字，但其实核心是机器也可识别，可以存储在自己系统里，之后随时调用。</em></p>
+<h3 id="While-语句"><a href="#While-语句" class="headerlink" title="While 语句"></a>While 语句</h3><p>这就是最基本的循环语句。While就是“当……的时候，就…….”，看起来跟if差不多，但这个就是循环语句的标志，不是条件语句（if语句）。意思是只要while后面那个条件一直正确（true），那么后面的语句就会反复执行，直到while条件错误位置（false）。如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">n=5</span><br><span class="line">while n&gt;0:</span><br><span class="line">	print(n)</span><br><span class="line">	n=n-1</span><br><span class="line">print(&quot;bow&quot;)</span><br><span class="line">则输出结果为5.4.3.2.1.bow</span><br></pre></td></tr></table></figure>
+<h3 id="巧妙运用break和continue"><a href="#巧妙运用break和continue" class="headerlink" title="巧妙运用break和continue"></a>巧妙运用break和continue</h3><p>break就是跳出/中止这个循环的意思。while True是一个常见的无限循环语句，如果没有break，这个循环体是会一直运行下去的，所以一定要小心！break的用法，要点如下：</p>
 <ul>
-<li>因素   ：对试验结果发生影响和起作用的自变量，即我们所要检验的对象</li>
-<li>单因素方差分析：方差分析研究的是一个因素对于试验结果的影响和作用</li>
-<li>双因素方差分析：研究两个因素的不同水平对试验结果的影响是否显著</li>
-<li>水平或处理：因素的不同选择方案，因素的水平实际上就是因素的取值或者是因素的分组</li>
-<li>随机误差：样本数据之间差异如果是由于抽样的随机性造成的</li>
-<li>系统误差：是由于因素水平本身不同引起的差异</li>
+<li>插入你的循环体中你想中止或跳出的地方。</li>
+<li>跳出循环体后，直接进入下一条语句。</li>
 </ul>
-<h4 id="基本前提"><a href="#基本前提" class="headerlink" title="基本前提"></a>基本前提</h4><p>各组的观察数据，要能够被看作是从服从正态分布的总体中随机抽得的样本。各组的观察数据，是从具有相同方差的总体中抽取得到的。观察值是相互独立的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">如： while True:</span><br><span class="line">		line=input(&quot;&gt;&quot;)</span><br><span class="line">		if line[0]==&quot;#&quot;:</span><br><span class="line">			continue</span><br><span class="line">		if line==&quot;done&quot;</span><br><span class="line">			break</span><br><span class="line">		print(line)</span><br><span class="line">	print(&quot;Done&quot;)</span><br></pre></td></tr></table></figure>
+<p>相应地，continue也是跳出循环体，但不同的是，continue是直接回到循环体最初while的位置重新运行循环体，而break是到下一条语句。</p>
+<p>这就是个continue和break的混合体，当你输入了#的时候，python会直接回到while True，从头再来，当你输入了break的时候，python会直接跳出循环体，到下一条语句，print ‘Done!’。</p>
+<p>一句话总结，<strong>break和continue都是跳出循环体，但break往下走，continue往上走。</strong></p>
+<h3 id="for…in…语句"><a href="#for…in…语句" class="headerlink" title="for…in…语句"></a><strong>for…in…语句</strong></h3><p>与while循环句不同却类似，for…in…语句是用来查找已知序列中的某个值的语句，所以称为definite loop</p>
+<h3 id="常见的对字符串操作的函数"><a href="#常见的对字符串操作的函数" class="headerlink" title="常见的对字符串操作的函数"></a>常见的对字符串操作的函数</h3><h4 id="len-函数"><a href="#len-函数" class="headerlink" title="len()函数"></a>len()函数</h4><p>就是length（长度）的缩写，可以用这个函数得到<strong>字符串的长度</strong>。</p>
+<h4 id="find-函数"><a href="#find-函数" class="headerlink" title="find()函数"></a>find()函数</h4><p>这是string library里的一个，旨在找到字符串里某个字符的位置。函数书写如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str.find(sub, start, end)</span><br></pre></td></tr></table></figure>
+<p>sub就是你要找的某个字符，start就是你要开始的位置，end就是你要结束的位置。如果用dir()这个函数，可以调出所有对于该字符串可以使用的函数。<a href="https://docs.python.org/3/library/index.html" target="_blank" rel="external">点此处可以索引所要使用的函数</a>.常见的如下：</p>
+<ul>
+<li>lower - 字母全小写</li>
+<li>upper - 字母全大写</li>
+<li>replace - 替换</li>
+<li>startswith - 开头的字符串</li>
+<li>lstrip - left strip 去掉左边的空格</li>
+<li>rstrip - right strip 去掉右边的空格</li>
+<li>strip - 去掉左右的空白</li>
+</ul>
+<h4 id="字符串分割"><a href="#字符串分割" class="headerlink" title="字符串分割"></a>字符串分割</h4><blockquote>
+<p>str[start:end]</p>
+</blockquote>
+<p>括号里两个数字用冒号连接。冒号左边就是起始位置，右边就是结束位置。如果结束位置超过字符串总长度，不会trace back，输出的值会是直接从起始位置到结束。</p>
 </span>
       
     </div>
@@ -265,7 +285,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/统计学/" rel="tag">#统计学</a>
+            <a href="/tags/python基础/" rel="tag">#python基础</a>
           
         </div>
       
@@ -274,16 +294,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/05/09/爬虫利器a-BeautifulSoup的使用/" rel="next" title="爬虫利器å-BeautifulSoup的使用">
-                <i class="fa fa-chevron-left"></i> 爬虫利器å-BeautifulSoup的使用
+              <a href="/2017/05/31/excel常见函数之计算统计类/" rel="next" title="excel常见函数之计算统计类">
+                <i class="fa fa-chevron-left"></i> excel常见函数之计算统计类
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/05/12/第11天学-学习python之html/" rel="prev" title="第11天学-学习python之html">
-                第11天学-学习python之html <i class="fa fa-chevron-right"></i>
+              <a href="/2017/06/04/第16天-学习python之正则表达式/" rel="prev" title="第16天-学习python之正则表达式">
+                第16天-学习python之正则表达式 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -391,7 +411,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#方差分析"><span class="nav-number">1.</span> <span class="nav-text">方差分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本思路"><span class="nav-number">1.1.</span> <span class="nav-text">基本思路</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基本前提"><span class="nav-number">1.2.</span> <span class="nav-text">基本前提</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#调用函数"><span class="nav-number">1.</span> <span class="nav-text">调用函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定义函数"><span class="nav-number">2.</span> <span class="nav-text">定义函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#空函数"><span class="nav-number">3.</span> <span class="nav-text">空函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参数检查"><span class="nav-number">4.</span> <span class="nav-text">参数检查</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#return和print的区别"><span class="nav-number">5.</span> <span class="nav-text">return和print的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#While-语句"><span class="nav-number">6.</span> <span class="nav-text">While 语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#巧妙运用break和continue"><span class="nav-number">7.</span> <span class="nav-text">巧妙运用break和continue</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#for…in…语句"><span class="nav-number">8.</span> <span class="nav-text">for…in…语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见的对字符串操作的函数"><span class="nav-number">9.</span> <span class="nav-text">常见的对字符串操作的函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#len-函数"><span class="nav-number">9.1.</span> <span class="nav-text">len()函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#find-函数"><span class="nav-number">9.2.</span> <span class="nav-text">find()函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字符串分割"><span class="nav-number">9.3.</span> <span class="nav-text">字符串分割</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
