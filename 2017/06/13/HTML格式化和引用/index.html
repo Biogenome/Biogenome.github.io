@@ -59,7 +59,7 @@
 
 
 引用和术语定义">
-<meta property="og:updated_time" content="2017-06-14T03:50:53.125Z">
+<meta property="og:updated_time" content="2017-06-14T03:57:50.368Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML格式化和引用">
 <meta name="twitter:description" content="HTML文本格式化HTML 可定义很多供格式化输出的元素，常见的可以点击此处
@@ -262,26 +262,26 @@
 <li>引用和术语定义</li>
 </ul>
 <a id="more"></a>
-<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>HTML <em><q></q></em> 元素定义<em>短的引用</em>。浏览器通常会为 <q> 元素包围<em>引号</em>。</q></p>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>HTML <code>&lt;q&gt;</code>元素定义<em>短的引用</em>。浏览器通常会为 <q> 元素包围<em>引号</em>。</q></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;WWF 的目标是：&lt;q&gt;构建人与自然和谐共存的世界。&lt;/q&gt;&lt;/p&gt;  </span><br><span class="line">结果显示为WWF 的目标是 &quot;构建人与自然和谐相处的世界。&quot;</span><br></pre></td></tr></table></figure>
-<p>HTML <em><blockquote></blockquote></em> 元素定义被引用的节。浏览器通常会对 <blockquote> 元素进行<em>缩进</em>处理。</blockquote></p>
+<p>HTML<code>*&lt;blockquote&gt;*</code> 元素定义被引用的节。浏览器通常会对 <blockquote> 元素进行<em>缩进</em>处理。</blockquote></p>
 <p>HTML <em><abbr></abbr></em> 元素定义<em>缩写</em>或首字母缩略语。对缩写进行标记能够为浏览器、翻译系统以及搜索引擎提供有用的信息。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;&lt;abbr title=&quot;World Health Organization&quot;&gt;WHO&lt;/abbr&gt; 成立于 1948 年。&lt;/p&gt;</span><br><span class="line">亲自试一试</span><br></pre></td></tr></table></figure>
-<p>HTML <em><dfn></dfn></em> 元素定义项目或缩写的<em>定义</em>。</p>
+<p>HTML <code>*&lt;dfn&gt;*</code>元素定义项目或缩写的<em>定义</em>。</p>
 <ul>
-<li><p>如果设置了 <dfn> 元素的 title 属性，则定义项目</dfn></p>
+<li><p>如果设置了 <code>&lt;dfn&gt;</code>元素的 title 属性，则定义项目</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;&lt;dfn title=&quot;World Health Organization&quot;&gt;WHO&lt;/dfn&gt; 成立于 1948 年。&lt;/p&gt;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>如果 <dfn> 元素包含具有标题的 <abbr> 元素，则 title 定义项目</abbr></dfn></p>
+<li><p>如果 <code>&lt;dfn&gt;</code>元素包含具有标题的 <abbr> 元素，则 title 定义项目</abbr></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">p&gt;&lt;dfn&gt;&lt;abbr title=&quot;World Health Organization&quot;&gt;WHO&lt;/abbr&gt;&lt;/dfn&gt; 成立于 1948 年。&lt;/p&gt;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>否则，<dfn> 文本内容即是项目，并且父元素包含定义。</dfn></p>
+<li><p>否则，<code>&lt;dfn&gt;</code> 文本内容即是项目，并且父元素包含定义。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;&lt;dfn&gt;WHO&lt;/dfn&gt; World Health Organization 成立于 1948 年。&lt;/p&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>HTML<address>元素用于联系。HTML <em><address></address></em> 元素定义文档或文章的联系信息（作者/拥有者）。此元素通常以<em>斜体</em>显示。大多数浏览器会在此元素前后添加折行。</address></p>
-<p>HTML <em><cite></cite></em> 元素定义<em>著作的标题</em>。浏览器通常会以斜体显示 <cite> 元素。</cite></p>
-<p>HTML <em><bdo></bdo></em> 元素定义双流向覆盖，<bdo> 元素用于覆盖当前文本方向。</bdo></p>
+<p>HTML<code>&lt;address&gt;</code>元素用于联系。HTML <code>*&lt;address&gt;*</code>元素定义文档或文章的联系信息（作者/拥有者）。此元素通常以<em>斜体</em>显示。大多数浏览器会在此元素前后添加折行。</p>
+<p>HTML <code>*&lt;cite&gt;*</code>元素定义<em>著作的标题</em>。浏览器通常会以斜体显示 <cite> 元素。</cite></p>
+<p>HTML<code>*&lt;bdo&gt;*</code>元素定义双流向覆盖，<bdo> 元素用于覆盖当前文本方向。</bdo></p>
 <h3 id="原文链接"><a href="#原文链接" class="headerlink" title="原文链接"></a>原文链接</h3><p><a href="http://www.w3school.com.cn/html/html_quotation_elements.asp" target="_blank" rel="external">w3school</a></p>
 <p>## </p>
 <p>## </p>
