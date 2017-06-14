@@ -188,8 +188,8 @@
             
             
               
-                <a class="post-title-link" href="/2017/04/22/第10天-学习python/" itemprop="url">
-                  第10天-学习python
+                <a class="post-title-link" href="/2017/05/12/第11天学-学习python之html/" itemprop="url">
+                  第11天学-学习python之html
                 </a>
               
             
@@ -199,8 +199,102 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2017-04-22T10:39:10+08:00" content="2017-04-22">
-              2017-04-22
+            <time itemprop="dateCreated" datetime="2017-05-12T21:53:19+08:00" content="2017-05-12">
+              2017-05-12
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p>HTTP 协议</p>
+<blockquote>
+<p>HTTP是在网络上传输HTML的协议，用于浏览器和服务器的通信。如在Web应用中，服务器把网页传给浏览器，实际上就是把网页的HTML代码发送给浏览器，让浏览器显示出来。HTML就是一种用来定义网页的文本。</p>
+</blockquote>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/05/12/第11天学-学习python之html/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                <a class="post-title-link" href="/2017/05/10/常见的统计学分析/" itemprop="url">
+                  常见的统计学分析
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2017-05-10T18:55:03+08:00" content="2017-05-10">
+              2017-05-10
             </time>
           </span>
 
@@ -241,14 +335,19 @@
         
           <span itemprop="articleBody">
             
-              <h3 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h3><p>为了编写可维护的代码，我们把很多函数分组，分别放到不同的文件里，这样，每个文件包含的代码就相对较少，很多编程语言都采用这种组织代码的方式。在Python中，一个.py文件就称之为一个<strong>模块（Module）</strong>.Python的模块其实就是封装了一个或者多个功能的代码集合，以便于重用，模块可以是一个<code>文件</code>也可以是一个<code>目录</code>，目录的形式称作<code>包</code>。使用模块的好处：</p>
+              <h3 id="方差分析"><a href="#方差分析" class="headerlink" title="方差分析"></a>方差分析</h3><blockquote>
+<p>方差分析（analysis of variation,简写为ANOVA）又称变异数分析或F检验,其目的是推断两组或多组数据的总体均值是否相同，检验两个或多个样本均值的差异是否有统计学意义。</p>
+</blockquote>
+<h4 id="基本思路"><a href="#基本思路" class="headerlink" title="基本思路"></a>基本思路</h4><p>将试验数据的总变异分解为来源于不同因素的相应变异，并作出数量估计，从而明确各个变异因素在总变异中所占的重要程度；也就是将试验数据的总变异方差分解成各变因方差，并以其中的<strong>误差方差</strong>作为和其他变因方差比较的标准，以推断其它变因所引起的变异量是否真实的一种统计分析方法。</p>
 <ul>
-<li>大大提高了代码的可维护性。</li>
-<li>编写代码不必从零开始。</li>
-<li>使用模块还可以避免函数名和变量名冲突。</li>
-<li>模块名字与其他模块冲突了，于是我们可以通过包来组织模块，避免冲突，自己创建模块时要注意命名，不能和Python自带的模块名称冲突。</li>
+<li>因素   ：对试验结果发生影响和起作用的自变量，即我们所要检验的对象</li>
+<li>单因素方差分析：方差分析研究的是一个因素对于试验结果的影响和作用</li>
+<li>双因素方差分析：研究两个因素的不同水平对试验结果的影响是否显著</li>
+<li>水平或处理：因素的不同选择方案，因素的水平实际上就是因素的取值或者是因素的分组</li>
+<li>随机误差：样本数据之间差异如果是由于抽样的随机性造成的</li>
+<li>系统误差：是由于因素水平本身不同引起的差异</li>
 </ul>
-<h4 id="内置模块"><a href="#内置模块" class="headerlink" title="内置模块"></a>内置模块</h4><p>内置模块可以理解成当你安装好python环境之后，直接可以使用<code>import</code>导入的就是内置模块</p>
+<h4 id="基本前提"><a href="#基本前提" class="headerlink" title="基本前提"></a>基本前提</h4><p>各组的观察数据，要能够被看作是从服从正态分布的总体中随机抽得的样本。各组的观察数据，是从具有相同方差的总体中抽取得到的。观察值是相互独立的。</p>
 
             
           </span>
@@ -286,8 +385,8 @@
             
             
               
-                <a class="post-title-link" href="/2017/04/21/git学习/" itemprop="url">
-                  git学习
+                <a class="post-title-link" href="/2017/05/09/爬虫利器a-BeautifulSoup的使用/" itemprop="url">
+                  爬虫利器å-BeautifulSoup的使用
                 </a>
               
             
@@ -297,8 +396,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2017-04-21T11:31:18+08:00" content="2017-04-21">
-              2017-04-21
+            <time itemprop="dateCreated" datetime="2017-05-09T19:55:00+08:00" content="2017-05-09">
+              2017-05-09
             </time>
           </span>
 
@@ -337,17 +436,11 @@
 
       
         
-          <h3 id="git简介"><a href="#git简介" class="headerlink" title="git简介"></a>git简介</h3><blockquote>
-<p>Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。分布式版本控制系统除了Git以及促使Git诞生的BitKeeper外，还有类似Git的Mercurial和Bazaar等。这些分布式版本控制系统各有特点，但最快、最简单也最流行的依然是Git！</p>
+          <h3 id="BeautifulSoup简介"><a href="#BeautifulSoup简介" class="headerlink" title="BeautifulSoup简介"></a>BeautifulSoup简介</h3><blockquote>
+<p>Beautiful Soup是python的一个库,通过解析文档为用户提供需要抓取的数据,Beautiful Soup自动将输入文档转换为Unicode编码，输出文档转换为utf-8编码。为用户灵活地提供不同的解析策略或强劲的速度。</p>
 </blockquote>
-<ul>
-<li><p>相比于集中式版本控制系统，分布式版本控制系统根本没有“中央服务器”，每个人的电脑上都是一个完整的版本库。</p>
-</li>
-<li><p>分布式版本控制系统的安全性更高。</p>
-</li>
-<li><p>免费,最快，最简单。</p>
           <div class="post-more-link text-center">
-            <a class="btn" href="/2017/04/21/git学习/#more" rel="contents">
+            <a class="btn" href="/2017/05/09/爬虫利器a-BeautifulSoup的使用/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -385,8 +478,8 @@
             
             
               
-                <a class="post-title-link" href="/2017/04/20/第9天-学习python/" itemprop="url">
-                  第9天-学习python
+                <a class="post-title-link" href="/2017/05/09/一次简单的爬虫尝试/" itemprop="url">
+                  一次简单的爬虫尝试
                 </a>
               
             
@@ -396,8 +489,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2017-04-20T10:17:44+08:00" content="2017-04-20">
-              2017-04-20
+            <time itemprop="dateCreated" datetime="2017-05-09T18:01:56+08:00" content="2017-05-09">
+              2017-05-09
             </time>
           </span>
 
@@ -436,14 +529,9 @@
 
       
         
-          <h3 id="爬虫基本结构"><a href="#爬虫基本结构" class="headerlink" title="爬虫基本结构"></a>爬虫基本结构</h3><blockquote>
-<p>正常通过浏览器可以获取的数据，爬虫都可以获取,爬虫的本质是一个服务端，实现的功能类似于浏览器.是一种自动获取网页内容的程序。是<a href="http://baike.baidu.com/item/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E">搜索引擎</a>的重要组成部分.我们需要干的事情其实就两件事情：找到我们需要的网页，然后把他们一个一个处理一遍。所以，爬虫的核心模块有三个：<strong>请求、解析、储存</strong></p>
-</blockquote>
-<ul>
-<li>对于单个页面来说，入口的来源有两种，一种是已知地址,另外一种是你可以通过前面爬下来的网页中获取入口.例如浏览网页的过程，用户输入网址之后，经过 DNS 服务器，找到服务器主机，向服务器发出一个请求，服务器经过解析之后，发送给用户的浏览器 HTML、JS、CSS 等文件，浏览器解析出来，用户看到的网页实质是由 HTML 代码构成的，通过分析和过滤这些 HTML 代码，实现资源的获取。</li>
-</ul>
+          <p>这是第一次尝试爬虫，学习了python基本的语法知识，爬虫所需要的库，主要是requests库和BeautifulSoup库，前者用于发送请求，后者用于解析网页。此次爬虫主要是为了下载华中科技大学生命学院所有教授的简介，实现代码如下：</p>
           <div class="post-more-link text-center">
-            <a class="btn" href="/2017/04/20/第9天-学习python/#more" rel="contents">
+            <a class="btn" href="/2017/05/09/一次简单的爬虫尝试/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -481,8 +569,8 @@
             
             
               
-                <a class="post-title-link" href="/2017/04/19/第8天-学习python/" itemprop="url">
-                  第8天-学习python
+                <a class="post-title-link" href="/2017/05/07/金陵一梦-南京游记/" itemprop="url">
+                  金陵一梦-南京游记
                 </a>
               
             
@@ -492,8 +580,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2017-04-19T09:04:37+08:00" content="2017-04-19">
-              2017-04-19
+            <time itemprop="dateCreated" datetime="2017-05-07T19:17:43+08:00" content="2017-05-07">
+              2017-05-07
             </time>
           </span>
 
@@ -502,8 +590,8 @@
               &nbsp; | &nbsp; 分类于
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
+                  <a href="/categories/生活/" itemprop="url" rel="index">
+                    <span itemprop="name">生活</span>
                   </a>
                 </span>
 
@@ -532,114 +620,9 @@
 
       
         
-          <h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><blockquote>
-<p>基本上所有的高级语言都支持函数，Python也不例外。Python不但能非常灵活地定义函数，而且本身内置了很多有用的函数，可以直接调用。</p>
-</blockquote>
-<h4 id="1-调用函数"><a href="#1-调用函数" class="headerlink" title="1.  调用函数"></a>1.  调用函数</h4><ul>
-<li><p>Python内置了很多有用的函数，我们可以直接调用,要调用一个函数，需要知道函数的名称和参数.可以从官方文档查看函数和参数<a href="https://docs.python.org/3/library/functions.html">官方文档说明</a></p>
-</li>
-<li><p>调用函数的时候,要确保传入的参数数量和参数类型无误，负责会发生<code>Tpyeerror</code>的错误</p>
+          <h3 id="金陵一梦，南京游记"><a href="#金陵一梦，南京游记" class="headerlink" title="金陵一梦，南京游记"></a>金陵一梦，南京游记</h3><p>很早以前就对南京这座充满历史韵味，充满魅力的城市充满了向往和期待，因为它曾经是六朝古都，也是中华民国首都，从古至今，在历史的场合中扮演着极其重要的角色，无数文人墨客为它留下了赞美的篇章。又因为自己最近在读《明朝那些事》这本小说，更加加深了对南京的向往，终于在今年利用五一假期和张熊熊一起成行南京，在此记录下旅行游记，希望可以帮助到去南京游玩的你们。</p>
           <div class="post-more-link text-center">
-            <a class="btn" href="/2017/04/19/第8天-学习python/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                <a class="post-title-link" href="/2017/04/18/第7天-学习python/" itemprop="url">
-                  第7天-学习python
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2017-04-18T14:04:00+08:00" content="2017-04-18">
-              2017-04-18
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h3 id="使用列表-list-和元组-tuple"><a href="#使用列表-list-和元组-tuple" class="headerlink" title="使用列表(list)和元组(tuple)"></a>使用列表(list)和元组(tuple)</h3><h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><blockquote>
-<p>列表是Python内置的一种数据类型，可以随时添加和删除其中的元素。</p>
-</blockquote>
-<ol>
-<li><p>用<code>len()</code>函数可以获得list元素的个数.</p>
-</li>
-<li><p>用索引来访问list中每一个位置的元素，索引是从<code>0</code>开始.</p>
-</li>
-<li><p>如果要取最后一个元素，除了计算索引位置外，还可以用<code>-1</code>做索引，直接获取最后一个元素.以此类推，可以获取倒数第2个、倒数第3个,如[-2],[-3]等.</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/04/18/第7天-学习python/#more" rel="contents">
+            <a class="btn" href="/2017/05/07/金陵一梦-南京游记/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -665,7 +648,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -703,21 +686,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">30</span>
+              <span class="site-state-item-count">35</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-count">9</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
