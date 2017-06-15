@@ -1,0 +1,681 @@
+<!doctype html>
+<html class="theme-next use-motion theme-next-mist">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" />
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.2"/>
+
+
+    <meta name="description" content="爱生活 面朝大海 春暖花开" />
+
+
+
+  <meta name="keywords" content="python," />
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+
+
+<meta name="description" content="copy模块用来复制
+copy模块用于对象的拷贝操作。该模块非常简单，只提供了两个主要的方法： copy.copy 与 copy.deepcopy ，分别表示浅复制与深复制。深复制表示原来列表中元素的改动不会影响新的列表，而浅复制会影响。
+
+Kewword模块记录所有的关键字
+iskeyword()表示字符串是否为关键字。kwlist表示列出所有python的关键字。
+
+1234import ke">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第17天-学习python之常用模块">
+<meta property="og:url" content="http://www.biogenome.github.io/2017/06/15/第17天-学习python之常用模块/index.html">
+<meta property="og:site_name" content="在水一方">
+<meta property="og:description" content="copy模块用来复制
+copy模块用于对象的拷贝操作。该模块非常简单，只提供了两个主要的方法： copy.copy 与 copy.deepcopy ，分别表示浅复制与深复制。深复制表示原来列表中元素的改动不会影响新的列表，而浅复制会影响。
+
+Kewword模块记录所有的关键字
+iskeyword()表示字符串是否为关键字。kwlist表示列出所有python的关键字。
+
+1234import ke">
+<meta property="og:updated_time" content="2017-06-15T09:26:41.522Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="第17天-学习python之常用模块">
+<meta name="twitter:description" content="copy模块用来复制
+copy模块用于对象的拷贝操作。该模块非常简单，只提供了两个主要的方法： copy.copy 与 copy.deepcopy ，分别表示浅复制与深复制。深复制表示原来列表中元素的改动不会影响新的列表，而浅复制会影响。
+
+Kewword模块记录所有的关键字
+iskeyword()表示字符串是否为关键字。kwlist表示列出所有python的关键字。
+
+1234import ke">
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'post'
+  };
+</script>
+
+
+
+  <title> 第17天-学习python之常用模块 | 在水一方 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">在水一方</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">Long Blog</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content"> 
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                第17天-学习python之常用模块
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2017-06-15T15:10:39+08:00" content="2017-06-15">
+              2017-06-15
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><h3 id="copy模块用来复制"><a href="#copy模块用来复制" class="headerlink" title="copy模块用来复制"></a>copy模块用来复制</h3><blockquote>
+<p>copy模块用于对象的拷贝操作。该模块非常简单，只提供了两个主要的方法： copy.copy 与 copy.deepcopy ，分别表示浅复制与深复制。深复制表示原来列表中元素的改动不会影响新的列表，而浅复制会影响。</p>
+</blockquote>
+<h3 id="Kewword模块记录所有的关键字"><a href="#Kewword模块记录所有的关键字" class="headerlink" title="Kewword模块记录所有的关键字"></a>Kewword模块记录所有的关键字</h3><blockquote>
+<p>iskeyword()表示字符串是否为关键字。kwlist表示列出所有python的关键字。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">import keyword</span><br><span class="line">print (keyword.iskeyword(&quot;if&quot;))</span><br><span class="line">True  #表示if为python关键字</span><br><span class="line">print(keyword.kwlist # python所有的关键字</span><br></pre></td></tr></table></figure>
+<h3 id="random模块获得随机数"><a href="#random模块获得随机数" class="headerlink" title="random模块获得随机数"></a>random模块获得随机数</h3><blockquote>
+<p>random模块主要用来获得随机数，常用的函数为randint(),choice,还有shuffle.randit函数在一定数字范围内找出一个随机的数字，choice从列表中随机选出一个元素，shuffle用来给列表洗牌。</p>
+</blockquote>
+<h3 id="sys模块用来控制shell程序"><a href="#sys模块用来控制shell程序" class="headerlink" title="sys模块用来控制shell程序"></a>sys模块用来控制shell程序</h3><blockquote>
+<p>exit函数停止控制台或输入程序。sys模块中的stdin对象，会提示用户输入信息，读取到shell程序中使用。它有一个readline函数，能读取从键盘输入的一行文本，直到用户按了回车键。它和input的区别在于可以指定一个参数来读取多少个字符。stdout,标准输出，用来写消息，与print类似。变量version表示python的版本。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">v=sys.stdin.readline(13)</span><br><span class="line">he who laughs last thinks slowest</span><br><span class="line">print(v)</span><br><span class="line">he who laughs</span><br></pre></td></tr></table></figure>
+<h3 id="time模块用来得到时间"><a href="#time模块用来得到时间" class="headerlink" title="time模块用来得到时间"></a>time模块用来得到时间</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import time</span><br><span class="line">print(time.time())</span><br></pre></td></tr></table></figure>
+<p>例如想要计算程序运行的时间，可以在开始和结束的时候记录时间，然后比较两个值。</p>
+<p>asctime函数日期的元组为参数，并转换成更可读的形式。函数localtime把当前的日期和时间作为一个对象返回。sleep让程序执行变慢、例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for x in range(1,60):</span><br><span class="line">	print(x)</span><br><span class="line">	time.sleep(1)  # 表示每隔一秒打印出一个数字</span><br></pre></td></tr></table></figure>
+<h3 id="pickle模块用来保存信息"><a href="#pickle模块用来保存信息" class="headerlink" title="pickle模块用来保存信息"></a>pickle模块用来保存信息</h3><blockquote>
+<p>pickle模块用来把python对象转换成可以方便写入到文件和从文件中读取的形式。</p>
+</blockquote>
+<h3 id="常见模块导入"><a href="#常见模块导入" class="headerlink" title="常见模块导入"></a>常见模块导入</h3><p>模块也可称为库，可分为三大类：python标准库，第三方模块，应用程序自定义模块</p>
+<p>python标准库：安装好python后，自带的库中的模块也叫做内置模块，直接import导入就可直接使用。从帮助文档中查找到这些模块。第三方模块：要安装后才能使用的模块。自定义模块：自己写的.py文件。以Tkinter模块为例简单介绍这几种模块导入的具体含义</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import Tkinter  #导入Tkinter 模块，那么在当前的程序中，我们可以通过Tkinter名来使用这个模块下的所有组件。</span><br><span class="line">import Tkinter as tk #将Tkinter模块导入进来并重命名为tk</span><br><span class="line">form Tkinter import Label #从Tkinter模块中导入Label这个组件</span><br><span class="line">From Tkinter import Label as Lb #从Tkinter模块中导入Label这个组件，并将Label组件重命名为Lb</span><br><span class="line">from Tkinter import * #从Tkinter模块中导入所有组件类,函数和变量等。</span><br></pre></td></tr></table></figure>
+<h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><p>趣学python</p>
+<p><a href="http://www.10tiao.com/html/382/201612/2649540012/1.html" target="_blank" rel="external">Python之导入模块</a></p>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python/" rel="tag">#python</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/06/15/HTML链接和图像/" rel="next" title="HTML链接和图像">
+                <i class="fa fa-chevron-left"></i> HTML链接和图像
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+ </div>
+
+        
+
+        
+          <div class="comments" id="comments">
+            
+          </div>
+        
+      </div>
+
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/images/default_avatar.jpg" alt="yangjinlong" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">yangjinlong</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">爱生活 面朝大海 春暖花开</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">38</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#copy模块用来复制"><span class="nav-number">1.</span> <span class="nav-text">copy模块用来复制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kewword模块记录所有的关键字"><span class="nav-number">2.</span> <span class="nav-text">Kewword模块记录所有的关键字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#random模块获得随机数"><span class="nav-number">3.</span> <span class="nav-text">random模块获得随机数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sys模块用来控制shell程序"><span class="nav-number">4.</span> <span class="nav-text">sys模块用来控制shell程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#time模块用来得到时间"><span class="nav-number">5.</span> <span class="nav-text">time模块用来得到时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pickle模块用来保存信息"><span class="nav-number">6.</span> <span class="nav-text">pickle模块用来保存信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见模块导入"><span class="nav-number">7.</span> <span class="nav-text">常见模块导入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考文献"><span class="nav-number">8.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner"> <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">yangjinlong</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span> </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+    
+    
+
+  
+
+
+  
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.5.2" id="motion.global"></script>
+
+
+
+
+  <script type="text/javascript" src="/js/nav-toggle.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 0.4 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    var $tocContent = $('.post-toc-content');
+    if (isDesktop() && CONFIG.sidebar === 'post') {
+      if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+        displaySidebar();
+      }
+    }
+  });
+</script>
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+      if (isMobile()) {
+        FastClick.attach(document.body);
+      }
+
+      motionIntegrator.bootstrap();
+    });
+  </script>
+
+  
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/lazyload.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("#posts").find('img').lazyload({
+        placeholder: "/images/loading.gif",
+        effect: "fadeIn"
+      });
+    });
+  </script>
+</body>
+</html>
