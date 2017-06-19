@@ -188,6 +188,320 @@
             
             
               
+                <a class="post-title-link" href="/2017/06/15/HTML计算机代码和注释/" itemprop="url">
+                  HTML计算机代码和注释
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2017-06-15T10:20:29+08:00" content="2017-06-15">
+              2017-06-15
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/web前端/" itemprop="url" rel="index">
+                    <span itemprop="name">web前端</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <h3 id="HTML计算机代码格式"><a href="#HTML计算机代码格式" class="headerlink" title="HTML计算机代码格式"></a>HTML计算机代码格式</h3><blockquote>
+<p>通常，HTML 使用<em>可变</em>的字母尺寸，以及可变的字母间距。在显示<em>计算机代码</em>示例时，并不需要如此。<code>&lt;kbd&gt;</code>, <code>&lt;samp&gt;</code>, 以及<code>&lt;code&gt;</code>元素全都支持固定的字母尺寸和间距。</p>
+</blockquote>
+<ul>
+<li>HTML <code>&lt;kbd&gt;</code>元素定义<em>键盘输入</em></li>
+<li>HTML <code>&lt;samp&gt;</code>元素定义<em>计算机输出示例</em></li>
+<li>HTML <code> 元素定义<em>编程代码示例</em>.<code> 元素<em>不保留</em>多余的<em>空格</em>和<em>折行</em>,如需解决该问题，您必须在 <pre> 元素中包围代码</pre></code></code></li>
+<li>HTML <code>&lt;var&gt;</code>元素定义<em>数学变量</em></li>
+</ul>
+<h3 id="HTML标签注释"><a href="#HTML标签注释" class="headerlink" title="HTML标签注释"></a>HTML标签注释</h3><p>注释标签 <!-- 与 --> 用于在 HTML 插入注释。在开始标签中有一个惊叹号，但是结束标签中没有。浏览器不会显示注释，但是能够帮助记录您的 HTML 文档。您可以利用注释在 HTML 中放置通知和提醒信息。如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 此刻不显示图片：</span><br><span class="line">&lt;img border=&quot;0&quot; src=&quot;/i/tulip_ballade.jpg&quot; alt=&quot;Tulip&quot;&gt;</span><br><span class="line">--&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="条件注释"><a href="#条件注释" class="headerlink" title="条件注释"></a>条件注释</h3><p>您也许会在 HTML 中偶尔发现条件注释，如只有在 Internet Explorer 执行的 HTML 标签。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--[if IE 8]&gt;</span><br><span class="line">    .... some HTML here ....</span><br><span class="line">&lt;![endif]--&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="HTML-CSS"><a href="#HTML-CSS" class="headerlink" title="HTML CSS"></a>HTML CSS</h3><ol>
+<li>外部样式表</li>
+</ol>
+<p>当样式需要被应用到很多页面的时候，外部样式表将是理想的选择。使用外部样式表，你就可以通过更改一个文件来改变整个站点的外观。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;</span><br><span class="line">&lt;/head&gt;</span><br></pre></td></tr></table></figure>
+<ol>
+<li><p>内部样式表</p>
+<p>当单个文件需要特别样式时，就可以使用内部样式表。你可以在 head 部分通过 <style> 标签定义内部样式表。</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line"></span><br><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">body &#123;background-color: red&#125;</span><br><span class="line">p &#123;margin-left: 20px&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br></pre></td></tr></table></figure>
+<ol>
+<li><p>内联样式</p>
+<p>当特殊的样式需要应用到个别元素时，就可以使用内联样式。 使用内联样式的方法是在相关的标签中使用样式属性。样式属性可以包含任何 CSS 属性。以下实例显示出如何改变段落的颜色和左外边距。</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;p style=&quot;color: red; margin-left: 20px&quot;&gt;</span><br><span class="line">This is a paragraph</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="原文链接"><a href="#原文链接" class="headerlink" title="原文链接"></a>原文链接</h3><p><a href="http://www.w3school.com.cn/html/html_css.asp">w3school</a></p>
+<p>​               </p>
+<p>​     </p>
+</style></p></li></ol>
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                <a class="post-title-link" href="/2017/06/13/HTML格式化和引用/" itemprop="url">
+                  HTML格式化和引用
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2017-06-13T18:29:21+08:00" content="2017-06-13">
+              2017-06-13
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/web前端/" itemprop="url" rel="index">
+                    <span itemprop="name">web前端</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <h3 id="HTML文本格式化"><a href="#HTML文本格式化" class="headerlink" title="HTML文本格式化"></a>HTML文本格式化</h3><p>HTML 可定义很多供格式化输出的元素，<a href="http://www.w3school.com.cn/html/html_formatting.asp">常见的可以点击此处</a></p>
+<ul>
+<li>文本格式化标签</li>
+<li>“计算机输出”标签</li>
+</ul>
+<ul>
+<li>引用和术语定义</li>
+</ul>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/06/13/HTML格式化和引用/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                <a class="post-title-link" href="/2017/06/13/HTML段落和样式/" itemprop="url">
+                  HTML段落和样式
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2017-06-13T17:45:36+08:00" content="2017-06-13">
+              2017-06-13
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/web前端/" itemprop="url" rel="index">
+                    <span itemprop="name">web前端</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <h3 id="HTML段落"><a href="#HTML段落" class="headerlink" title="HTML段落"></a>HTML段落</h3><blockquote>
+<p> 段落是通过 <p> 标签定义的。<p> 是块级元素,即使忘了使用结束标签，大多数浏览器也会正确地将 HTML 显示出来,但不要依赖这种做法。忘记使用结束标签会产生意想不到的结果和错误。</p>
+</blockquote>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/06/13/HTML段落和样式/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
                 <a class="post-title-link" href="/2017/06/13/HTML属性和标题/" itemprop="url">
                   HTML属性和标题
                 </a>
@@ -357,293 +671,11 @@
 
 
     
-      
-
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                <a class="post-title-link" href="/2017/06/13/HTML基础/" itemprop="url">
-                  HTML基础
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2017-06-13T13:40:10+08:00" content="2017-06-13">
-              2017-06-13
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/web前端/" itemprop="url" rel="index">
-                    <span itemprop="name">web前端</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h3 id="什么是-HTML？"><a href="#什么是-HTML？" class="headerlink" title="什么是 HTML？"></a>什么是 HTML？</h3><p>HTML 是用来描述网页的一种语言。</p>
-<ul>
-<li>HTML 指的是超文本标记语言 (<strong>H</strong>yper <strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage)</li>
-<li>HTML 不是一种编程语言，而是一种<em>标记语言</em> (markup language)</li>
-<li>标记语言是一套<em>标记标签</em> (markup tag)</li>
-<li>HTML 使用<em>标记标签</em>来描述网页</li>
-</ul>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/06/13/HTML基础/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                <a class="post-title-link" href="/2017/06/04/第16天-学习python之正则表达式/" itemprop="url">
-                  第16天-学习python之正则表达式
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2017-06-04T20:19:21+08:00" content="2017-06-04">
-              2017-06-04
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <blockquote>
-<p>正则表达式（regular expression）是一个特殊的字符序列，它能帮助你方便的检查一个字符串是否与某种模式匹配。python中模块’re’提供了对正则表达式的支持。re 模块提供了不少有用的函数，用以匹配字符串，比如：compile 函数,match函数等。</p>
-</blockquote>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/06/04/第16天-学习python之正则表达式/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                <a class="post-title-link" href="/2017/06/01/第15天-学习python之函数的使用/" itemprop="url">
-                  第15天-学习python之函数的使用
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2017-06-01T07:20:30+08:00" content="2017-06-01">
-              2017-06-01
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h3 id="调用函数"><a href="#调用函数" class="headerlink" title="调用函数"></a>调用函数</h3><p>Python内置了很多有用的函数，我们可以直接调用。要调用一个函数，需要知道函数的名称和参数，可以直接从Python的官方网站查看文档：<a href="https://docs.python.org/3/library/functions.html">python内置函数官方文档</a>，也可以在交互式命令行通过<code>help(abs)</code>查看<code>abs</code>函数的帮助信息。</p>
-<p>调用函数的时候，如果传入的参数数量不对或参数类型不能被函数所接受，会报<code>TypeError</code>的错误。</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/06/01/第15天-学习python之函数的使用/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -681,7 +713,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">38</span>
+              <span class="site-state-item-count">41</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
